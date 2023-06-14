@@ -11,7 +11,7 @@ namespace SunClouds.ViewModel
     {
         public MainViewModel() 
         {
-
+            //comment
         }
     }
 }
