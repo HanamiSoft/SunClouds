@@ -1,6 +1,8 @@
-﻿using SunClouds.ViewModel.Helpers;
+﻿using Newtonsoft.Json;
+using SunClouds.ViewModel.Helpers;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,9 +11,13 @@ namespace SunClouds.ViewModel
 {
     internal class MainViewModel : BindingHelper
     {
-        public MainViewModel() 
+        #region Свойства
+        
+        #endregion
+        public MainViewModel()
         {
-            APIHelper.Get("Moscow");
+        
         }
+
     }
 }

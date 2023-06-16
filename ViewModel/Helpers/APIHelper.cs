@@ -17,37 +17,26 @@ namespace SunClouds.ViewModel.Helpers
 
 
         /// <summary>
-        /// Запрос на получение всех данных из API
+        /// Запрос на получение текущей погоды города из API.
+        /// Вторым параметрам передаётся тип градусов температуры: <br/> standard = kelvin <br/> metric = celsius <br/> imperial = fahrenheit
         /// </summary>
         /// <returns>Json из API</returns>
-        public static string Get(string city, string units = "standart")
+        public static string GetNow(string city, string units = "standart")
         {
             string data = $"weather?q={city}&units={units}&appid={apiKey}";
             return new HttpClient().GetAsync(url + data).Result.Content.ReadAsStringAsync().Result;
         }
-
-        public static string Put(string json, string city, string units = "standart")
-        {
-            string data = $"weather?q={city}&units={units}&appid={apiKey}";
-            return new HttpClient().PutAsync(url + data, new StringContent(json)).Result.Content.ReadAsStringAsync().Result;
-        }
         /// <summary>
-        /// Запрос на добавление данных в API
+        /// Запрос на получение погоды города на каждые 3 часа вперёд из API
+        /// Вторым параметрам передаётся тип градусов температуры: <br/> standard = kelvin <br/> metric = celsius <br/> imperial = fahrenheit
         /// </summary>
-        /// <param name="json"></param>
-        /// <returns>Json из API</returns>
-        public static string Post(string json)
+        /// <param name="city"></param>
+        /// <param name="units"></param>
+        /// <returns></returns>
+        public static string GetThreeHours(string city, string units = "standart")
         {
-            return new HttpClient().PostAsync(url, new StringContent(json)).Result.Content.ReadAsStringAsync().Result;
-        }
-        /// <summary>
-        /// Запрос на удаление данных из API
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns>Json из API</returns>
-        public static string Delete(int id)
-        {
-            return new HttpClient().DeleteAsync(url + id).Result.Content.ReadAsStringAsync().Result;
+            string data = $"forecast?q={city}&units={units}&appid={apiKey}";
+            return new HttpClient().GetAsync(url + data).Result.Content.ReadAsStringAsync().Result;
         }
 
     }
