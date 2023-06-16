@@ -1,6 +1,8 @@
 ﻿using SunClouds.ViewModel;
+using System;
 using System.Windows;
-
+using System.Windows.Input;
+using System.Windows.Media;
 
 namespace SunClouds
 {
@@ -13,6 +15,14 @@ namespace SunClouds
         {
             InitializeComponent();
             DataContext = new MainViewModel();
+        }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if(e.ChangedButton == MouseButton.Left)
+            {
+                (sender as MainWindow).DragMove();
+            }
         }
     }
 }

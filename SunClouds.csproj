@@ -69,6 +69,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Converters\ResourceConverter.cs" />
     <Compile Include="ViewModel\Helpers\BindableCommand.cs" />
     <Compile Include="ViewModel\Helpers\BindingHelper.cs" />
     <Compile Include="ViewModel\Helpers\JSONHelper.cs" />
@@ -96,6 +97,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="Jura-Regular.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -107,6 +109,21 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\day.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\morningevening.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\night.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\StylesLib\StylesLib.csproj">
+      <Project>{ec8821ef-cd1b-44cd-85db-82a566d1e96e}</Project>
+      <Name>StylesLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

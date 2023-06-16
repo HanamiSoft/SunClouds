@@ -4,6 +4,11 @@
              xmlns:local="clr-namespace:SunClouds"
              StartupUri="View/MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!--ПОДКЛЮЧЕНИЕ СЛОВАРЯ РЕСУРСОВ С НЕСКОЛЬКИМИ СЛОВАРЯМИ-->
+                <ResourceDictionary Source="pack://application:,,,/StylesLib;component/FullDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
-</Application>
+</Application>  

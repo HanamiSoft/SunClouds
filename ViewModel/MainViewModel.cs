@@ -1,17 +1,23 @@
-﻿using SunClouds.ViewModel.Helpers;
-using System;
+﻿using SunClouds;
+using StylesLib;
+using SunClouds.ViewModel.Helpers;
+using System.Globalization;
+using System.Windows.Media;
+using SunClouds.Properties;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
+using System.Windows;
+using System.Windows.Controls;
 
 namespace SunClouds.ViewModel
 {
     internal class MainViewModel : BindingHelper
     {
-        public MainViewModel() 
-        {
 
+        public MainViewModel()
+        {
+           
         }
-    }
+    }   
 }
+
