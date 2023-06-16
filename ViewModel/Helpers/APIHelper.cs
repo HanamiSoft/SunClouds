@@ -25,7 +25,7 @@ namespace SunClouds.ViewModel.Helpers
             string data = $"weather?q={city}&units={units}&appid={apiKey}";
             return new HttpClient().GetAsync(url + data).Result.Content.ReadAsStringAsync().Result;
         }
-        
+
         public static string Put(string json, string city, string units = "standart")
         {
             string data = $"weather?q={city}&units={units}&appid={apiKey}";
