@@ -113,6 +113,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Model\CurrentWeather.cs" />
+    <Compile Include="Model\ThreeHoursWeather.cs" />
+    <Compile Include="ViewModel\Helpers\APIHelper.cs" />
     <Compile Include="ViewModel\Helpers\BindableCommand.cs" />
     <Compile Include="ViewModel\Helpers\BindingHelper.cs" />
     <Compile Include="ViewModel\Helpers\JSONHelper.cs" />
@@ -169,8 +172,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
