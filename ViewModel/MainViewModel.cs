@@ -8,15 +8,15 @@ using System.Collections.Generic;
 using System;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace SunClouds.ViewModel
 {
     internal class MainViewModel : BindingHelper
     {
-
         public MainViewModel()
         {
-           
+            
         }
     }   
 }
