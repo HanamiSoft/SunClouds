@@ -61,6 +61,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="UserToolbar.xaml.cs">
+      <DependentUpon>UserToolbar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\GFeelingsViewModel.cs" />
     <Compile Include="ViewModel\GPressureViewModel.cs" />
     <Compile Include="ViewModel\GTemperatureViewModel.cs" />
@@ -93,6 +96,10 @@
     <Compile Include="View\WeatherWindow.xaml.cs">
       <DependentUpon>WeatherWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="UserToolbar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\GraphicFeelingsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -172,6 +179,23 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Group 30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Rectangle 13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Vector 45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Group 31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Rectangle 14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Vector 46.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
