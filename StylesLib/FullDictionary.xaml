@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <!--ОБЪЕДИНЕНИЕ В ОДИН СЛОВАРЬ РЕСУРСОВ НЕСКОЛЬКО СЛОВАРЕЙ РЕСУРСОВ-->
+        <ResourceDictionary Source="Resources/DayTheme.xaml"/>
+        <ResourceDictionary Source="Resources/MorningEveningTheme.xaml"/>
+        <ResourceDictionary Source="Resources/NightTheme.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>

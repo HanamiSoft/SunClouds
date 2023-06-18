@@ -1,0 +1,36 @@
+C:\Users\mirzo\Source\Repos\StylesLib\bin\Debug\StylesLib.dll
+C:\Users\mirzo\Source\Repos\StylesLib\bin\Debug\StylesLib.pdb
+C:\Users\mirzo\Source\Repos\StylesLib\obj\Debug\StylesLib.csproj.AssemblyReference.cache
+C:\Users\mirzo\Source\Repos\StylesLib\obj\Debug\FullDictionary.baml
+C:\Users\mirzo\Source\Repos\StylesLib\obj\Debug\Resources\DayTheme.baml
+C:\Users\mirzo\Source\Repos\StylesLib\obj\Debug\Resources\MorningEveningTheme.baml
+C:\Users\mirzo\Source\Repos\StylesLib\obj\Debug\Resources\NightTheme.baml
+C:\Users\mirzo\Source\Repos\StylesLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\mirzo\Source\Repos\StylesLib\obj\Debug\StylesLib_MarkupCompile.cache
+C:\Users\mirzo\Source\Repos\StylesLib\obj\Debug\StylesLib_MarkupCompile.lref
+C:\Users\mirzo\Source\Repos\StylesLib\obj\Debug\Themes\Generic.baml
+C:\Users\mirzo\Source\Repos\StylesLib\obj\Debug\StylesLib.g.resources
+C:\Users\mirzo\Source\Repos\StylesLib\obj\Debug\StylesLib.Properties.Resources.resources
+C:\Users\mirzo\Source\Repos\StylesLib\obj\Debug\StylesLib.csproj.GenerateResource.cache
+C:\Users\mirzo\Source\Repos\StylesLib\obj\Debug\StylesLib.csproj.CoreCompileInputs.cache
+C:\Users\mirzo\Source\Repos\StylesLib\obj\Debug\StylesLib.dll
+C:\Users\mirzo\Source\Repos\StylesLib\obj\Debug\StylesLib.pdb
+C:\Users\mirzo\Source\Repos\StylesLib\bin\Debug\StylesLib.dll.config
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\StylesLib.dll.config
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\StylesLib.dll
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\StylesLib.pdb
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.csproj.AssemblyReference.cache
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\FullDictionary.baml
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\Resources\DayTheme.baml
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\Resources\MorningEveningTheme.baml
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\Resources\NightTheme.baml
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib_MarkupCompile.cache
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib_MarkupCompile.lref
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\Themes\Generic.baml
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.g.resources
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.Properties.Resources.resources
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.csproj.GenerateResource.cache
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.csproj.CoreCompileInputs.cache
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.dll
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.pdb
