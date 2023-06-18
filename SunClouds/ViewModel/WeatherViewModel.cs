@@ -16,9 +16,10 @@ namespace SunClouds.ViewModel
 {
     internal class WeatherViewModel : BindingHelper
     {
+        
         public WeatherViewModel()
         {
-
+            
         }
     }
 }
