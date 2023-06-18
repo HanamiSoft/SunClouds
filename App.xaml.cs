@@ -58,6 +58,23 @@ namespace SunClouds
             }
         }
 
+        public static string ButtonInWeather
+        {
+            get { return button; }
+            set
+            {
+                button = value;
+                var dict = new ResourceDictionary { Source = new Uri($"/StylesLib;component/Resources/{value}.xaml#CustomButtonInWeather", UriKind.Relative) };
+
+                if (Current.Resources.MergedDictionaries.Count > 0)
+                {
+                    Current.Resources.MergedDictionaries.RemoveAt(0);
+                }
+
+                Current.Resources.MergedDictionaries.Insert(0, dict);
+            }
+        }
+
         private static string textbox;
         public static string TextBox
         {

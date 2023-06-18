@@ -19,7 +19,7 @@
         <Border Style="{DynamicResource GridEffect}" Grid.Column="1" Grid.Row="1" Height="158" VerticalAlignment="Center" HorizontalAlignment="Center" Width="206">
             <Grid>
                 <Rectangle Height="1" VerticalAlignment="Top" Margin="0,157,1,0" Style="{DynamicResource ShadowsHorizontal}"/>
-                <Rectangle Height="158" VerticalAlignment="Center" Margin="204,0,0,0" Style="{DynamicResource ShadowsVertical}"/>
+                <Rectangle Height="152" VerticalAlignment="Top" Margin="204,5,0,0" Style="{DynamicResource ShadowsVertical}"/>
             </Grid>
         </Border>
         <Label Content="SunClouds" Style="{DynamicResource MainTitle}" Grid.Column="1" Margin="13,0,13,106" Grid.Row="1"/>
@@ -34,7 +34,7 @@
                 </i:EventTrigger>
             </i:Interaction.Triggers>
         </TextBox>
-        <Button Content="Узнать погоду" Style="{DynamicResource CustomButton}" Grid.Column="1" Margin="11,97,11,31" Grid.Row="1" Command="{Binding SaveParameterCommand}"/>
+        <Button Content="Узнать погоду" Style="{DynamicResource CustomButton}" Grid.Column="1" Margin="30,116,28,17" Grid.Row="1" Command="{Binding SaveParameterCommand}"/>
         <Grid.RowDefinitions>
             <RowDefinition Height="121*"/>
             <RowDefinition Height="158*"/>

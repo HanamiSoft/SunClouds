@@ -27,6 +27,7 @@ namespace SunClouds.ViewModel.Helpers
             {
                 App.Theme = "NightTheme";
                 App.Button = "NightTheme";
+                App.ButtonInWeather = "NightTheme";
                 App.TextBox = "NightTheme";
                 App.Label = "NightTheme";
                 App.WeatherLabelStyle20px = "NightTheme";
@@ -37,6 +38,7 @@ namespace SunClouds.ViewModel.Helpers
                 App.Theme = "MorningEveningTheme";
                 App.Button = "MorningEveningTheme";
                 App.TextBox = "MorningEveningTheme";
+                App.ButtonInWeather = "MorningEveningTheme";
                 App.Label = "MorningEveningTheme";
                 App.WeatherLabelStyle20px = "MorningEveningTheme";
                 App.WeatherLabelStyle26px = "MorningEveningTheme";
@@ -45,6 +47,7 @@ namespace SunClouds.ViewModel.Helpers
             {
                 App.Theme = "DayTheme";
                 App.Button = "DayTheme";
+                App.ButtonInWeather = "DayTheme";
                 App.TextBox = "DayTheme";
                 App.Label = "DayTheme";
                 App.WeatherLabelStyle20px = "DayTheme";
