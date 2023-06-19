@@ -16,6 +16,7 @@
             <Grid>
                 <Rectangle Height="1" VerticalAlignment="Top" Margin="0,157,1,0" Style="{DynamicResource ShadowsHorizontal}"/>
                 <Rectangle Height="152" VerticalAlignment="Top" Margin="204,5,0,0" Style="{DynamicResource ShadowsVertical}"/>
+                
             </Grid>
         </Border>
         <Label Content="SunClouds" Style="{DynamicResource MainTitle}" Grid.Column="1" Margin="13,0,13,106" Grid.Row="1"/>

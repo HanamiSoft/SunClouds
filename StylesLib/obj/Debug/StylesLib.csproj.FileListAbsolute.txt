@@ -34,3 +34,21 @@ C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\
 C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.csproj.CoreCompileInputs.cache
 C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.dll
 C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.pdb
+D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\bin\Debug\StylesLib.dll.config
+D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\bin\Debug\StylesLib.dll
+D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\bin\Debug\StylesLib.pdb
+D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\StylesLib.csproj.AssemblyReference.cache
+D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\FullDictionary.baml
+D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\Resources\DayTheme.baml
+D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\Resources\MorningEveningTheme.baml
+D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\Resources\NightTheme.baml
+D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\StylesLib_MarkupCompile.cache
+D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\StylesLib_MarkupCompile.lref
+D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\Themes\Generic.baml
+D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\StylesLib.g.resources
+D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\StylesLib.Properties.Resources.resources
+D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\StylesLib.csproj.GenerateResource.cache
+D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\StylesLib.csproj.CoreCompileInputs.cache
+D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\StylesLib.dll
+D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\StylesLib.pdb
