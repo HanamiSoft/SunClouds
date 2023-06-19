@@ -30,7 +30,7 @@ namespace SunClouds.View
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
             
-            Pages.Content = new WeatherPage(); // Отображение страницы для примера
+            Pages.Content = new SettingsPage(); // Отображение страницы для примера
         }
     }
 }
