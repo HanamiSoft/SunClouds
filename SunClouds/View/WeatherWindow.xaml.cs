@@ -26,5 +26,13 @@ namespace SunClouds.View
             InitializeComponent();
             DataContext = new WeatherViewModel();
         }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                (sender as WeatherWindow).DragMove();
+            }
+        }
     }
 }

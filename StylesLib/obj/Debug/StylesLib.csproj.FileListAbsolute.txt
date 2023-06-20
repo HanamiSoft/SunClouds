@@ -34,3 +34,21 @@ C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\
 C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.csproj.CoreCompileInputs.cache
 C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.dll
 C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.pdb
+C:\Users\PC\Source\Repos\SunClouds\StylesLib\bin\Debug\StylesLib.dll.config
+C:\Users\PC\Source\Repos\SunClouds\StylesLib\bin\Debug\StylesLib.dll
+C:\Users\PC\Source\Repos\SunClouds\StylesLib\bin\Debug\StylesLib.pdb
+C:\Users\PC\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.csproj.AssemblyReference.cache
+C:\Users\PC\Source\Repos\SunClouds\StylesLib\obj\Debug\FullDictionary.baml
+C:\Users\PC\Source\Repos\SunClouds\StylesLib\obj\Debug\Resources\DayTheme.baml
+C:\Users\PC\Source\Repos\SunClouds\StylesLib\obj\Debug\Resources\MorningEveningTheme.baml
+C:\Users\PC\Source\Repos\SunClouds\StylesLib\obj\Debug\Resources\NightTheme.baml
+C:\Users\PC\Source\Repos\SunClouds\StylesLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\PC\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib_MarkupCompile.cache
+C:\Users\PC\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib_MarkupCompile.lref
+C:\Users\PC\Source\Repos\SunClouds\StylesLib\obj\Debug\Themes\Generic.baml
+C:\Users\PC\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.g.resources
+C:\Users\PC\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.Properties.Resources.resources
+C:\Users\PC\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.csproj.GenerateResource.cache
+C:\Users\PC\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.csproj.CoreCompileInputs.cache
+C:\Users\PC\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.dll
+C:\Users\PC\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.pdb
