@@ -37,6 +37,24 @@ namespace SunClouds
             }
         }
 
+        private static string rectangleCity;
+        public static string RectangleCity
+        {
+            get { return rectangleCity; }
+            set
+            {
+                rectangleCity = value;
+                var dict = new ResourceDictionary { Source = new Uri($"/StylesLib;component/Resources/{value}.xaml", UriKind.Relative) };
+
+                if (Current.Resources.MergedDictionaries.Count > 0)
+                {
+                    Current.Resources.MergedDictionaries.RemoveAt(0);
+                }
+
+                Current.Resources.MergedDictionaries.Insert(0, dict);
+            }
+        }
+
         private static string button;
         public static string Button
         {

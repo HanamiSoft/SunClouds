@@ -28,6 +28,7 @@ namespace SunClouds.ViewModel.Helpers
                 App.Label = "NightTheme";
                 App.WeatherLabelStyle20px = "NightTheme";
                 App.WeatherLabelStyle26px = "NightTheme";
+                App.RectangleCity = "NightTheme";
             }
             else if (hour >= 4 && hour <= 11 || hour >= 17 && hour <= 23)
             {
@@ -38,6 +39,7 @@ namespace SunClouds.ViewModel.Helpers
                 App.Label = "MorningEveningTheme";
                 App.WeatherLabelStyle20px = "MorningEveningTheme";
                 App.WeatherLabelStyle26px = "MorningEveningTheme";
+                App.RectangleCity = "MorningEveningTheme";
             }
             else if (hour >= 12 && hour <= 16)
             {
@@ -48,6 +50,7 @@ namespace SunClouds.ViewModel.Helpers
                 App.Label = "DayTheme";
                 App.WeatherLabelStyle20px = "DayTheme";
                 App.WeatherLabelStyle26px = "DayTheme";
+                App.RectangleCity = "DayTheme";
             }
         }
     }

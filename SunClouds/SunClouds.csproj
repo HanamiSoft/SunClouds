@@ -178,5 +178,17 @@
       <Name>StylesLib</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Pictures\Blizzard.png" />
+    <Resource Include="Pictures\Cloudy.png" />
+    <Resource Include="Pictures\Downpour.png" />
+    <Resource Include="Pictures\Line.png" />
+    <Resource Include="Pictures\Rainy.png" />
+    <Resource Include="Pictures\Snow.png" />
+    <Resource Include="Pictures\Sunny.png" />
+    <Resource Include="Pictures\Thunderstorm.png" />
+    <Resource Include="Pictures\Wind.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
