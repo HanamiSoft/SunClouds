@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="SunClouds.View.UserFavouriteCities"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SunClouds.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="56" d:DesignWidth="140">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="City" Style="{DynamicResource CustomButton}" Width="140" Height="28" Content="{Binding Country}"/>
+        <TextBox x:Name="Dolgota" Style="{DynamicResource TextControl}" Grid.Row="1" Width="140" Height="28" IsEnabled="False" Text="{Binding Shirota}" />
+    </Grid>
+</UserControl>

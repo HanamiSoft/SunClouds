@@ -6,8 +6,7 @@
       xmlns:local="clr-namespace:SunClouds.View"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="WeatherPage"
-      Background="{DynamicResource BackgroundTheme}">
+      Title="WeatherPage">
 
     <Grid>
         <Grid.RowDefinitions>
