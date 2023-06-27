@@ -5,8 +5,11 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SunClouds.View"
              mc:Ignorable="d" 
-             d:DesignHeight="56" d:DesignWidth="165"
-             DataContext="{Binding RelativeSource={RelativeSource Self}}">
+             xmlns:main3="clr-namespace:SunClouds.ViewModel"
+             d:DesignHeight="56" d:DesignWidth="165">
+    <UserControl.DataContext>
+        <main3:FavouriteCitiesModel/>
+    </UserControl.DataContext>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>

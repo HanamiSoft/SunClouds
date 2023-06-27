@@ -1,19 +1,23 @@
 ﻿<Page x:Class="SunClouds.View.SettingsPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:k="http://schemas.xceed.com/wpf/xaml/toolkit"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SunClouds.View"
+      xmlns:main2="clr-namespace:SunClouds.ViewModel"
       mc:Ignorable="d" 
       xmlns:diagnostics="clr-namespace:System.Diagnostics;assembly=WindowsBase"
       d:DesignHeight="450" d:DesignWidth="800"
       Title="SettingsPage">
-
+    <Page.DataContext>
+        <main2:SettingsViewModel/>
+    </Page.DataContext>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="35*"/>
-            <RowDefinition Height="23*"/>
-            <RowDefinition Height="32*"/>
+            <RowDefinition Height="27*"/>
+            <RowDefinition Height="28*"/>
 
             <RowDefinition Height="170*"/>
             <RowDefinition Height="36*"/>
@@ -24,28 +28,44 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="401"/>
         </Grid.ColumnDefinitions>
 
-        <Label Content="Ваш основной город:" Style="{DynamicResource MainTitle}" Grid.ColumnSpan="2" VerticalAlignment="Top" Width="NaN" Height="32"/>
-        <Label Content="Избранные города:" Style="{DynamicResource MainTitle}" Grid.ColumnSpan="2" Grid.Row="2" VerticalAlignment="Center" Width="NaN" Height="32"/>
-        <Button Content="Сохранить" Style="{DynamicResource CustomButton}" Grid.Row="7" Grid.ColumnSpan="2" Width="724" Height="20" VerticalAlignment="Top" Margin="38,0,38,0" Grid.RowSpan="2" />
-        <RadioButton Content="Цельсий C°" Grid.Row="6" Grid.Column="0" HorizontalAlignment="Right" VerticalAlignment="Top" Height="23" Width="200" Margin="0,10,25,0"/>
-        <RadioButton Content="Цельсий C°" Grid.Row="6" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="23" Width="200" Margin="25,10,0,0"/>
-        <Border Style="{DynamicResource GridEffect}" Grid.ColumnSpan="2" Grid.Row="3" Height="140" VerticalAlignment="Center" HorizontalAlignment="Center" Width="724" Margin="38,0,38,0">
+        <Label Content="Ваш основной город:" Style="{DynamicResource MainTitle}" Grid.ColumnSpan="2" Margin="297,0,0,0" Height="34" VerticalAlignment="Center" HorizontalAlignment="Left" Width="225"/>
+        <Label Content="Избранные города:" Style="{DynamicResource MainTitle}" Grid.ColumnSpan="2" Grid.Row="2" VerticalAlignment="Center" Width="206" Height="32" Margin="297,0,0,0" HorizontalAlignment="Left"/>
+        <Button Content="Сохранить" Style="{DynamicResource CustomButton}" Grid.Row="7" Grid.ColumnSpan="2" Height="20" VerticalAlignment="Bottom" Margin="50,0,0,10" HorizontalAlignment="Left" Width="700" />
+        <RadioButton Content="Цельсий C°" Grid.Row="6" Grid.Column="0" Style="{DynamicResource RadioButtonStyleLeft}" HorizontalAlignment="Left" Height="23" VerticalAlignment="Bottom" Width="100" Grid.ColumnSpan="2" Margin="350,0,0,0"/>
+        <RadioButton Content="Цельсий F°" Grid.Row="6" Style="{DynamicResource RadioButtonStyleRight}" Height="23" Width="100"  Grid.ColumnSpan="2" Margin="350,0,0,0" VerticalAlignment="Center"/>
+        <Border Style="{DynamicResource GridEffect}" Grid.ColumnSpan="2" Grid.Row="3" Height="140" VerticalAlignment="Center" HorizontalAlignment="Left" Width="724" Margin="38,0,0,0">
             <Grid>
                 <Rectangle Height="1" VerticalAlignment="Top" Margin="0,130,1,0" Style="{DynamicResource ShadowsHorizontal}"/>
                 <Rectangle Height="130" VerticalAlignment="Top" Margin="725,5,0,0" Style="{DynamicResource ShadowsVertical}"/>
-
             </Grid>
         </Border>
-        <Label Content="Исчисление градусов:" Style="{DynamicResource MainTitle}" Grid.ColumnSpan="2" Grid.Row="5" VerticalAlignment="Center" Height="32" Width="NaN" Margin="250,0,250,0"/>
-        <TextBox Text="{}" Grid.ColumnSpan="2" Grid.Row="1" Style="{DynamicResource TextControl}" Height="19" Width="724" Margin="38,0,38,0"/>
-        <Grid Grid.Row="4" Grid.ColumnSpan="2">
-            <TextBox Style="{DynamicResource TextControl}" Grid.Row="4" Grid.ColumnSpan="2" Width="600" Margin="0,0,130,0" />
-            <Button  Style="{DynamicResource CustomButton}" Content="Добавить город" Grid.Row="4" Grid.Column="1" Width="124" Margin="594,0,0,0"/>
+        <Label Content="Исчисление градусов:" Style="{DynamicResource MainTitle}" Width="240" Grid.ColumnSpan="2" Grid.Row="5" VerticalAlignment="Center" Height="32" Margin="282,0,0,0" HorizontalAlignment="Left"/>
+        <k:WatermarkTextBox Text="{Binding TextSymb1}" Width="625" Style="{DynamicResource WatermarkStyle}" Margin="88,0,0,0" Grid.ColumnSpan="2" Grid.Row="1" Height="25" VerticalAlignment="Center" HorizontalAlignment="Left">
+            <k:WatermarkTextBox.Watermark>
+                <StackPanel Style="{DynamicResource StackByHint}">
+                    <TextBlock Text="Ваш город" Style="{DynamicResource HintStyle}" Width="145" />
+                </StackPanel>
+            </k:WatermarkTextBox.Watermark>
+        </k:WatermarkTextBox>
+        <Button Content="Х" Style="{DynamicResource TransparentButtonStyle}"  Command="{Binding ClearText}" Margin="275,0,0,0" Grid.Row="1" Height="25" VerticalAlignment="Center" Grid.Column="1" HorizontalAlignment="Left" Width="26"/>
+        <Grid Grid.Row="3" Grid.ColumnSpan="2" Margin="0,169,0,0" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <k:WatermarkTextBox Text="{Binding TextSymb2}" Width="620" Style="{DynamicResource WatermarkStyle}" Margin="19,0,0,0" Height="25" VerticalAlignment="Center" HorizontalAlignment="Left">
+                <k:WatermarkTextBox.Watermark>
+                    <StackPanel Style="{DynamicResource StackByHint}">
+                        <TextBlock Text="Ваш город" Style="{DynamicResource HintStyle}" Width="145" />
+                    </StackPanel>
+                </k:WatermarkTextBox.Watermark>
+            </k:WatermarkTextBox>
+            <Button Content="Х" Style="{DynamicResource TransparentButtonStyle}"  Command="{Binding ClearText2}" Margin="613,0,0,0" Height="25" VerticalAlignment="Center" HorizontalAlignment="Left" Width="25"/>
+            <Button Style="{DynamicResource CustomButton}" Content="Добавить город" Width="124" HorizontalAlignment="Left" Height="25" VerticalAlignment="Center" Margin="640,0,0,0" Command="{Binding SetFavouriteCountry}"/>
         </Grid>
-        <ItemsControl ItemsSource="{Binding Items, diagnostics:PresentationTraceSources.TraceLevel=High}" Grid.Row="3" Grid.ColumnSpan="2" Width="724" Margin="38,0,38,0" Height="140" >
+        <ItemsControl ItemsSource="{Binding Items, diagnostics:PresentationTraceSources.TraceLevel=High}" Grid.Row="3" Grid.ColumnSpan="2" Margin="38,0,0,0" Height="140" VerticalAlignment="Center" HorizontalAlignment="Left" Width="724" >
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
                     <WrapPanel/>

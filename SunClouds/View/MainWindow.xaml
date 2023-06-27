@@ -2,36 +2,50 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:k="http://schemas.xceed.com/wpf/xaml/toolkit"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         Background="{DynamicResource BackgroundTheme}"
         MouseDown="Window_MouseDown"
         WindowStyle="None"
+        MinHeight="158"
+        MinWidth="206"
         AllowsTransparency="True"
+        xmlns:main1="clr-namespace:SunClouds.ViewModel"
         ResizeMode="CanResizeWithGrip"
         Title="MainWindow" Height="400" Width="666">
+    <Window.DataContext>
+        <main1:MainViewModel/>
+    </Window.DataContext>
     <Grid>
-        <Border Style="{DynamicResource GridEffect}" Grid.Column="1" Grid.Row="1" Height="158" VerticalAlignment="Center" HorizontalAlignment="Center" Width="206">
-            <Grid>
-                <Rectangle Height="1" VerticalAlignment="Top" Margin="0,157,1,0" Style="{DynamicResource ShadowsHorizontal}"/>
-                <Rectangle Height="152" VerticalAlignment="Top" Margin="204,5,0,0" Style="{DynamicResource ShadowsVertical}"/>
-            </Grid>
-        </Border>
-        <Label Content="SunClouds" Style="{DynamicResource MainTitle}" Grid.Column="1" Margin="13,0,13,106" Grid.Row="1"/>
-        <Rectangle Style="{DynamicResource RectangleWhite}" Grid.Column="1" Margin="30,52,30,104" Grid.Row="1"/>
-        <TextBox Text="{Binding TextSymb}" Grid.Column="1" Margin="30,67,28,67" Grid.Row="1" Style="{DynamicResource TextControl}">
-        </TextBox>
-        <Button Content="Узнать погоду" Style="{DynamicResource CustomButton}" Grid.Column="1" Margin="30,116,28,17" Grid.Row="1" Command="{Binding SaveParameterCommand}"/>
         <Grid.RowDefinitions>
-            <RowDefinition Height="121*"/>
-            <RowDefinition Height="158*"/>
-            <RowDefinition Height="121*"/>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="Auto" MinHeight="169"/>
+            <RowDefinition Height="34*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200*"/>
-            <ColumnDefinition Width="215*"/>
-            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto" MinWidth="206.5"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+
+        <Border Style="{DynamicResource GridEffect}" Grid.Row="1" Grid.Column="1">
+            <Grid>
+                <Rectangle Height="1" VerticalAlignment="Top" Style="{DynamicResource ShadowsHorizontal}" Margin="-1,168,0,0"/>
+                <Rectangle Width="1" HorizontalAlignment="Right" Style="{DynamicResource ShadowsVertical}"/>
+            </Grid>
+        </Border>
+        <Label Content="SunClouds" Style="{DynamicResource MainTitle}" Grid.Row="1" Grid.Column="1" Height="52" VerticalAlignment="Top" HorizontalAlignment="Center" Width="206"/>
+        <Rectangle Style="{DynamicResource RectangleWhite}" Grid.Row="1" Grid.Column="1" Height="2" VerticalAlignment="Top" Margin="17,57,17,0"/>
+        <k:WatermarkTextBox Text="{Binding TextSymb}" Style="{DynamicResource WatermarkStyle}" Grid.Row="1" Grid.Column="1" Height="24" VerticalAlignment="Center" Margin="16,0,16,0">
+            <k:WatermarkTextBox.Watermark>
+                <StackPanel Style="{DynamicResource StackByHint}">
+                    <TextBlock Text="Ваш город" Style="{DynamicResource HintStyle}" Width="145" />
+                </StackPanel>
+            </k:WatermarkTextBox.Watermark>
+        </k:WatermarkTextBox>
+        <Button Content="Х" Style="{DynamicResource TransparentButtonStyle}" Grid.Row="1" Grid.Column="1" Command="{Binding ClearText}" VerticalAlignment="Center" Margin="164,0,17,0"/>
+        <Button Content="Узнать погоду" Style="{DynamicResource CustomButton}" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,120,0,0" Command="{Binding SaveParameterCommand}"/>
     </Grid>
 </Window>
