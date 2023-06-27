@@ -1,4 +1,5 @@
-﻿using SunClouds.ViewModel.Helpers;
+﻿using LiveCharts;
+using SunClouds.ViewModel.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,12 @@ namespace SunClouds.ViewModel
 {
     internal class GTemperatureViewModel : BindingHelper
     {
+        public string[] Times { get; set; }
+        public ChartValues<int> Degs { get; set; }
+        public GTemperatureViewModel() 
+        {
+            
+        }
+
     }
 }
