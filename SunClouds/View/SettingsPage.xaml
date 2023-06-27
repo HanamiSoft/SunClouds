@@ -5,6 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:SunClouds.View"
       mc:Ignorable="d" 
+      xmlns:diagnostics="clr-namespace:System.Diagnostics;assembly=WindowsBase"
       d:DesignHeight="450" d:DesignWidth="800"
       Title="SettingsPage">
 
@@ -39,17 +40,19 @@
             </Grid>
         </Border>
         <Label Content="Исчисление градусов:" Style="{DynamicResource MainTitle}" Grid.ColumnSpan="2" Grid.Row="5" VerticalAlignment="Center" Height="32" Width="NaN" Margin="250,0,250,0"/>
-        <TextBox Text="{Binding TextSymb}" Grid.ColumnSpan="2" Grid.Row="1" Style="{DynamicResource TextControl}" Height="19" Width="724" Margin="38,0,38,0"/>
-
-        <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="0" Grid.RowSpan="7" Margin="385,0,0,0" Width="5">
-            <Separator Style="{StaticResource {x:Static ToolBar.SeparatorStyleKey}}" />
-        </StackPanel>
-        <TextBox Style="{DynamicResource TextControl}" Grid.Row="4" Grid.ColumnSpan="2" Width="600" Margin="0,6,130,5" />
-        <Button  Style="{DynamicResource CustomButton}" Content="Добавить город" Grid.Row="4" Grid.Column="1" Width="124" Margin="238,6,0,5" HorizontalAlignment="Left"/>
-        <ItemsControl ItemsSource="{Binding Items}" Grid.Row="3" Grid.ColumnSpan="2" Width="724" Margin="38,0,38,0" Height="140" >
+        <TextBox Text="{}" Grid.ColumnSpan="2" Grid.Row="1" Style="{DynamicResource TextControl}" Height="19" Width="724" Margin="38,0,38,0"/>
+        <Grid Grid.Row="4" Grid.ColumnSpan="2">
+            <TextBox Style="{DynamicResource TextControl}" Grid.Row="4" Grid.ColumnSpan="2" Width="600" Margin="0,0,130,0" />
+            <Button  Style="{DynamicResource CustomButton}" Content="Добавить город" Grid.Row="4" Grid.Column="1" Width="124" Margin="594,0,0,0"/>
+        </Grid>
+        
+        
+        <ItemsControl ItemsSource="{Binding Items, diagnostics:PresentationTraceSources.TraceLevel=High}" Grid.Row="3" Grid.ColumnSpan="2" Width="724" Margin="38,0,38,0" Height="140" >
             <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
+                    
                     <WrapPanel  />
+                    
                 </ItemsPanelTemplate>
             </ItemsControl.ItemsPanel>
             <ItemsControl.ItemTemplate>
@@ -57,6 +60,7 @@
                     <local:UserFavouriteCities/>
                 </DataTemplate>
             </ItemsControl.ItemTemplate>
+            
             <ItemsControl.ItemContainerStyle>
                 <Style>
                     <Setter Property="FrameworkElement.Margin" Value="5" />

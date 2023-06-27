@@ -1,6 +1,8 @@
-﻿using SunClouds.ViewModel.Helpers;
+﻿using SunClouds.View;
+using SunClouds.ViewModel.Helpers;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,5 +11,10 @@ namespace SunClouds.ViewModel
 {
     internal class WeatherPageViewModel : BindingHelper
     {
+        public WeatherPageViewModel()
+        {
+
+        }
+
     }
 }

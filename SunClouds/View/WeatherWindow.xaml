@@ -8,11 +8,11 @@
         WindowStyle="None"
         AllowsTransparency="True"
         ResizeMode="CanResizeWithGrip"
-        Title="WeatherInfWindow"  Height="903" Width="1503" Top="-27" Left="-3"
+        Title="WeatherInfWindow"  Height="625" Width="1240" Top="-27" Left="-3"
         Background="{DynamicResource BackgroundTheme}">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="380"/>
+            <ColumnDefinition Width="340"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
