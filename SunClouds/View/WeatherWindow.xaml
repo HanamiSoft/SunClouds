@@ -76,8 +76,8 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Button Style="{DynamicResource ButtonWithLineLeft}" Grid.Column="0" x:Name="WeatherPageBtn" Content="Погода" Margin="10,-7,0,0" HorizontalAlignment="Left"/>
-            <Button Style="{DynamicResource ButtonWithLineRight}" Grid.Column="1"  x:Name="SettingPageBtn" Content="Настройки" Margin="0,-7,10,0" HorizontalAlignment="Right" />
+            <Button Style="{DynamicResource ButtonWithLineLeft}" Grid.Column="0" x:Name="WeatherPageBtn" Content="Погода" Margin="10,-7,0,0" Width="420" HorizontalAlignment="Left"/>
+            <Button Style="{DynamicResource ButtonWithLineRight}" Grid.Column="1"  x:Name="SettingPageBtn" Content="Настройки" Margin="0,-7,10,0" Width="420" HorizontalAlignment="Right" />
         </Grid>
         <Frame x:Name="Pages" Grid.Row="1" Grid.Column="1"/>
     </Grid>

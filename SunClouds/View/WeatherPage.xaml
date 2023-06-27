@@ -16,53 +16,53 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="69*"/>
-            <RowDefinition Height="198*"/>
-            <RowDefinition Height="38*"/>
+            <RowDefinition Height="76*"/>
+            <RowDefinition Height="185*"/>
+            <RowDefinition Height="44*"/>
             <RowDefinition Height="245*"/>
         </Grid.RowDefinitions>
 
-        <ToolBar Height="60" VerticalAlignment="Bottom" HorizontalAlignment="Center" BorderThickness="1" Background="Transparent" Width="824" Grid.ColumnSpan="3" >
+        <ToolBar Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" BorderThickness="1" Background="Transparent" Width="824" Grid.ColumnSpan="3" >
             <Label Content="21°"  Style="{DynamicResource CityTitle}"  Width="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Separator/>
 
-            <Label  Style="{DynamicResource WeatherText20px}" Width="116"  >
+            <Label  Style="{DynamicResource WeatherText20px}" Foreground="White" Width="116"  >
                 <Label.Content>
                     <TextBlock TextWrapping="Wrap" TextAlignment="Center">Ощущение: 21</TextBlock>
                 </Label.Content>
             </Label>
 
-            <Label  Style="{DynamicResource WeatherText20px}" Width="53"  >
+            <Label  Style="{DynamicResource WeatherText20px}" Foreground="White" Width="53"  >
                 <Label.Content>
                     <TextBlock TextWrapping="Wrap" TextAlignment="Center">Мин. 21</TextBlock>
                 </Label.Content>
             </Label>
 
-            <Label  Style="{DynamicResource WeatherText20px}" Width="64"  >
+            <Label  Style="{DynamicResource WeatherText20px}" Foreground="White" Width="64"  >
                 <Label.Content>
                     <TextBlock TextWrapping="Wrap" TextAlignment="Center">Макс. 21</TextBlock>
                 </Label.Content>
             </Label>
 
-            <Label  Style="{DynamicResource WeatherText20px}" Width="120"  >
+            <Label  Style="{DynamicResource WeatherText20px}" Foreground="White" Width="120"  >
                 <Label.Content>
                     <TextBlock TextWrapping="Wrap" TextAlignment="Center">Давление: 211 мм рт. ст</TextBlock>
                 </Label.Content>
             </Label>
 
-            <Label  Style="{DynamicResource WeatherText20px}" Width="118"  >
+            <Label  Style="{DynamicResource WeatherText20px}" Foreground="White" Width="118"  >
                 <Label.Content>
                     <TextBlock TextWrapping="Wrap" TextAlignment="Center">Влажность: 20%</TextBlock>
                 </Label.Content>
             </Label>
 
-            <Label  Style="{DynamicResource WeatherText20px}" Width="110"  >
+            <Label  Style="{DynamicResource WeatherText20px}" Foreground="White" Width="110"  >
                 <Label.Content>
                     <TextBlock TextWrapping="Wrap" TextAlignment="Center">Ветер м/с: 7 м/с: 21</TextBlock>
                 </Label.Content>
             </Label>
 
-            <Label  Style="{DynamicResource WeatherText20px}" Width="110"  >
+            <Label  Style="{DynamicResource WeatherText20px}" Foreground="White" Width="110"  >
                 <Label.Content>
                     <TextBlock TextWrapping="Wrap" TextAlignment="Center">Ветер°: 221</TextBlock>
                 </Label.Content>
@@ -74,7 +74,7 @@
 
         </ToolBar>
 
-        <Border Style="{DynamicResource GridEffect}" Height="60" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="824" Grid.ColumnSpan="3">
+        <Border Style="{DynamicResource GridEffect}" Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Width="824" Grid.ColumnSpan="3">
             <Grid>
                 <Rectangle Height="1" VerticalAlignment="Top" Margin="0,58,1,0" Style="{DynamicResource ShadowsHorizontal}"/>
                 <Rectangle Height="74" VerticalAlignment="Top" Margin="822,5,0,0" Style="{DynamicResource ShadowsVertical}"/>
@@ -90,15 +90,15 @@
             </Grid>
         </Border>
 
-        <Border Style="{DynamicResource GridEffect}" Grid.Row="1" Height="155" VerticalAlignment="Center" HorizontalAlignment="Center" Width="824" Grid.ColumnSpan="3">
+        <Border Style="{DynamicResource GridEffect}" Grid.Row="1" Height="154" VerticalAlignment="Center" HorizontalAlignment="Center" Width="824" Grid.ColumnSpan="3">
             <Grid>
-                <Rectangle Height="1" VerticalAlignment="Top" Margin="0,153,1,0" Style="{DynamicResource ShadowsHorizontal}"/>
-                <Rectangle Height="155" VerticalAlignment="Top" Margin="822,5,0,0" Style="{DynamicResource ShadowsVertical}"/>
+                <Rectangle Height="1" VerticalAlignment="Top" Margin="0,152,1,0" Style="{DynamicResource ShadowsHorizontal}"/>
+                <Rectangle Height="154" VerticalAlignment="Top" Margin="824,5,0,0" Style="{DynamicResource ShadowsVertical}"/>
 
             </Grid>
         </Border>
 
-        <lvc:CartesianChart Opacity="0.8" x:Name="Diagram" Grid.Row="3" Series="{Binding SeriesCollection}" Height="230" Width="824" VerticalAlignment="Top" Grid.ColumnSpan="3">
+        <lvc:CartesianChart Opacity="0.8" x:Name="Diagram" Grid.Row="3" Series="{Binding SeriesCollection}" Height="230" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="824">
             <lvc:CartesianChart.AxisX>
                 <lvc:Axis Title="Часов" Labels="{Binding Labels}" Foreground="White"></lvc:Axis>
             </lvc:CartesianChart.AxisX>
@@ -107,12 +107,17 @@
             </lvc:CartesianChart.AxisY>
         </lvc:CartesianChart>
 
-        <Button FontFamily="{DynamicResource Jura}" BorderThickness="0" Content="Температура" HorizontalAlignment="Stretch" Grid.Column="0" Grid.Row="2" Margin="50,10,10,10" Background="#87B6CA"></Button>
-        <Button FontFamily="{DynamicResource Jura}" BorderThickness="0" Content="Ощущается как" HorizontalAlignment="Stretch" Grid.Column="1" Grid.Row="2" Margin="10" Background="#87B6CA"></Button>
-        <Button FontFamily="{DynamicResource Jura}"  BorderThickness="0" Content="Давление" HorizontalAlignment="Stretch" Grid.Column="2"  Margin="10,10,50,10" Grid.Row="2" Background="#87B6CA"></Button>
+        <Button FontFamily="{DynamicResource Jura}" Foreground="White" BorderThickness="0" Content="Температура" Grid.Column="0" Grid.Row="2" Margin="50,7,10,7" Background="#87B6CA"/>
+        <Button FontFamily="{DynamicResource Jura}" Foreground="White" BorderThickness="0" Content="Ощущается как" Grid.Column="1" Grid.Row="2" Margin="10,5,10,9" Background="#87B6CA"/>
+        <Button FontFamily="{DynamicResource Jura}" Foreground="White"  BorderThickness="0" Content="Давление" Grid.Column="2"  Margin="10,5,50,9" Grid.Row="2" Background="#87B6CA"/>
 
-        <StackPanel Grid.Row="1" Grid.ColumnSpan="3" Width="824"  Height="155" HorizontalAlignment="Center" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Visible" >
-            <local:UserWeatherHour Width="100" Height="140" VerticalAlignment="Center" HorizontalAlignment="Center" />
+        <StackPanel Grid.Row="1" Width="824" HorizontalAlignment="Center" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Visible" Margin="0,23,0,15" Grid.Column="1"  >
+            <local:UserWeatherHour Width="100" Height="140" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <local:UserWeatherHour.Effect>
+                    <DropShadowEffect Color="Black" Direction="280" ShadowDepth="9" Opacity="0.2" />
+                </local:UserWeatherHour.Effect>
+            </local:UserWeatherHour>
+            
             <!-- Добавляем экземпляр UserControl в StackPanel -->
         </StackPanel>
 
