@@ -70,3 +70,21 @@ D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая ра
 D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunCloudss\StylesLib\obj\Debug\StylesLib.csproj.CoreCompileInputs.cache
 D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunCloudss\StylesLib\obj\Debug\StylesLib.dll
 D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunCloudss\StylesLib\obj\Debug\StylesLib.pdb
+C:\Users\79663\Source\Repos\SunClouds\StylesLib\bin\Debug\StylesLib.dll.config
+C:\Users\79663\Source\Repos\SunClouds\StylesLib\bin\Debug\StylesLib.dll
+C:\Users\79663\Source\Repos\SunClouds\StylesLib\bin\Debug\StylesLib.pdb
+C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.csproj.AssemblyReference.cache
+C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\FullDictionary.baml
+C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\Resources\DayTheme.baml
+C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\Resources\MorningEveningTheme.baml
+C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\Resources\NightTheme.baml
+C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib_MarkupCompile.cache
+C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib_MarkupCompile.lref
+C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\Themes\Generic.baml
+C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.g.resources
+C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.Properties.Resources.resources
+C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.csproj.GenerateResource.cache
+C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.csproj.CoreCompileInputs.cache
+C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.dll
+C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.pdb
