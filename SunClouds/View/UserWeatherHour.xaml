@@ -17,17 +17,6 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-
-        <!--<Border Grid.RowSpan="3" Height="150" VerticalAlignment="Center" HorizontalAlignment="Center" Width="100" Grid.ColumnSpan="2">
-            <Grid>
-                <Rectangle Height="1" VerticalAlignment="Top" Margin="0,148,1,0" Style="{DynamicResource ShadowsHorizontal}"/>
-                <Rectangle Height="150" VerticalAlignment="Top" Margin="98,5,0,0" Style="{DynamicResource ShadowsVertical}"/>
-            </Grid>
-        </Border>-->
-
-
-
-
         <Border Grid.ColumnSpan="2" Grid.Row="0" Background="#87B6CA" Opacity="0.7"></Border>
         <Border Grid.ColumnSpan="2" Grid.Row="1" Background="#3D95B9" Opacity="0.7"></Border>
         <Border Grid.ColumnSpan="2" Grid.Row="2" Background="#87B6CA" Opacity="0.7"></Border>

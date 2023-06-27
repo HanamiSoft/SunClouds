@@ -32,12 +32,10 @@ namespace SunClouds.ViewModel
 
 
         #endregion
-        public event EventHandler onRequestClose;
         #region commands
+        public event EventHandler onRequestClose;
         public BindableCommand ExitCommand { get; set; }
         public BindableCommand SaveParameterCommand { get; set; } // Действие для сохранения параметра
-        public BindableCommand LostFocusCommand { get; set; } // Действие, когда наводишься уже на другой элемент
-        public BindableCommand PreviewMouseDownCommand { get; set; } // Действие, когда нажимаешь на TextBox
         #endregion
 
         public MainViewModel()
@@ -45,32 +43,16 @@ namespace SunClouds.ViewModel
             TextSymb = Settings.Default.City;
 
             SaveParameterCommand = new BindableCommand(_ => SaveParameter());
-            LostFocusCommand = new BindableCommand(TextBoxLostFocus);
-            PreviewMouseDownCommand = new BindableCommand(TextBoxPreviewMouseDown);
             ExitCommand = new BindableCommand(_ => onRequestClose(this, new EventArgs()));
             
         }   
-
-        private void TextBoxLostFocus(object parameter) // Метод для действий, связанных с LostFocus
-        {
-            if (string.IsNullOrEmpty(TextSymb))
-                TextSymb = "Ваш город";
-            
-        }
-
-        private void TextBoxPreviewMouseDown(object parameter) // Метод для действий, связанных c PrewiewMouseDownCommand
-        {
-            if (TextSymb == "Ваш город" || TextSymb == Settings.Default.City)
-                TextSymb = "";
-            
-        }
         private void SaveParameter() // Метод для сохранения города в параметрах
         {
-            //if (string.IsNullOrEmpty(TextSymb) && TextSymb != "Ваш город")
-            //    return;
-            
-            //Settings.Default.City = TextSymb;
-            //Settings.Default.Save();
+            if (string.IsNullOrEmpty(TextSymb))
+                return;
+
+            Settings.Default.City = TextSymb;
+            Settings.Default.Save();
             new WeatherWindow().Show(); // Открытие нового окна погоды
             ExitCommand.Execute(this); // Исполнение команды закрытия прошлого окна
         }

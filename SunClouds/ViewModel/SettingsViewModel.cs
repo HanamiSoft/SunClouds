@@ -24,10 +24,5 @@ namespace SunClouds.ViewModel
             Items.Add(new FavouriteCitiesModel { Country = "Item 3", Shirota = "Shirota 3" });
             Items.Add(new FavouriteCitiesModel { Country = "Item 3", Shirota = "Shirota 3" });
         }
-
-        private string GetDebuggerDisplay()
-        {
-            return ToString();
-        }
     }
 }

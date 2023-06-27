@@ -13,8 +13,8 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Button x:Name="City" Style="{DynamicResource CustomButton}" Width="163" Height="28" Content="{Binding Country}"/>
-        <TextBox x:Name="Dolgota" Style="{DynamicResource TextControl}" Grid.Row="1" Width="165" Height="28" IsEnabled="False" Text="{Binding Shirota}" />
+        <Button Style="{DynamicResource CustomButton}" Width="163" Height="28" Content="{Binding Country}"/>
+        <TextBox Style="{DynamicResource TextControl}" Grid.Row="1" Width="165" Height="28" IsEnabled="False" Text="{Binding Shirota}" />
        
     </Grid>
 </UserControl>

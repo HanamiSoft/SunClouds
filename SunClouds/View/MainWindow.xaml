@@ -21,14 +21,6 @@
         <Label Content="SunClouds" Style="{DynamicResource MainTitle}" Grid.Column="1" Margin="13,0,13,106" Grid.Row="1"/>
         <Rectangle Style="{DynamicResource RectangleWhite}" Grid.Column="1" Margin="30,52,30,104" Grid.Row="1"/>
         <TextBox Text="{Binding TextSymb}" Grid.Column="1" Margin="30,67,28,67" Grid.Row="1" Style="{DynamicResource TextControl}">
-            <i:Interaction.Triggers>
-                <i:EventTrigger EventName="LostFocus">
-                    <i:InvokeCommandAction Command="{Binding LostFocusCommand}" />
-                </i:EventTrigger>
-                <i:EventTrigger EventName="PreviewMouseDown">
-                    <i:InvokeCommandAction Command="{Binding PreviewMouseDownCommand}"  />
-                </i:EventTrigger>
-            </i:Interaction.Triggers>
         </TextBox>
         <Button Content="Узнать погоду" Style="{DynamicResource CustomButton}" Grid.Column="1" Margin="30,116,28,17" Grid.Row="1" Command="{Binding SaveParameterCommand}"/>
         <Grid.RowDefinitions>

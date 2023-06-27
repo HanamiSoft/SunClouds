@@ -24,8 +24,7 @@ namespace SunClouds.View
         public SettingsPage()
         {
             InitializeComponent();
-            var vm = new SettingsViewModel();
-            DataContext = vm;
+            DataContext = new SettingsViewModel();
         }
     }
 }

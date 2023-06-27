@@ -3,12 +3,19 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
       xmlns:local="clr-namespace:SunClouds.View"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="GraphicTemperaturePage">
-
     <Grid>
-        
+        <lvc:CartesianChart Opacity="0.8" x:Name="Diagram" Grid.Row="3" Series="{Binding SeriesCollection}" Height="230" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="824">
+            <lvc:CartesianChart.AxisX>
+                <lvc:Axis Title="Часов" Labels="{Binding Labels}" Foreground="White"></lvc:Axis>
+            </lvc:CartesianChart.AxisX>
+            <lvc:CartesianChart.AxisY>
+                <lvc:Axis Title="Градусов" LabelFormatter="{Binding YFormatter}" Foreground="White"></lvc:Axis>
+            </lvc:CartesianChart.AxisY>
+        </lvc:CartesianChart>
     </Grid>
 </Page>

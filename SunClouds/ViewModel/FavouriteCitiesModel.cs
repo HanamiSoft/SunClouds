@@ -31,7 +31,9 @@ namespace SunClouds.ViewModel
                 OnPropertyChanged(nameof(Shirota));
             }
         }
+        public FavouriteCitiesModel()
+        {
 
-
+        }
     }
 }
