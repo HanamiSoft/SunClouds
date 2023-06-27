@@ -63,7 +63,7 @@
             
             <ItemsControl.ItemContainerStyle>
                 <Style>
-                    <Setter Property="FrameworkElement.Margin" Value="5" />
+                    <Setter Property="FrameworkElement.Margin" Value="8,7,8,0" />
                 </Style>
             </ItemsControl.ItemContainerStyle>
         </ItemsControl>
