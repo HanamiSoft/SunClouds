@@ -12,26 +12,93 @@
         ResizeMode="CanResizeWithGrip"
         Title="MainWindow" Height="400" Width="666">
     <Grid>
-        <Border Style="{DynamicResource GridEffect}" Grid.Column="1" Grid.Row="1" Height="158" VerticalAlignment="Center" HorizontalAlignment="Center" Width="206">
+        <StackPanel Orientation="Horizontal" Grid.Column="3" Height="34" VerticalAlignment="Center" HorizontalAlignment="Center" Width="99" >
+            <Image x:Name="Minus" Height="12" Width="12"  Margin="10" MouseDown="Minus_MouseDown">
+                <Image.ToolTip>
+                    <ToolTip>
+                        свернуть
+                    </ToolTip>
+                </Image.ToolTip>
+                <Image.Style>
+                    <Style TargetType="{x:Type Image}">
+                        <Setter Property="Source" Value="/TOOLBAR/Vector 46.png"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsMouseOver, ElementName=Minus}"
+                                         Value="True">
+                                <Setter Property="Source" Value="/TOOLBAR/мин актив.png"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+
+
+
+            </Image>
+            <Image x:Name="screen" Height="12" Width="12"  Margin="10" MouseDown="screen_MouseDown">
+                <Image.ToolTip>
+                    <ToolTip>
+                        свернуть в окно
+                    </ToolTip>
+                </Image.ToolTip>
+                <Image.Style>
+                    <Style TargetType="{x:Type Image}">
+                        <Setter Property="Source" Value="/TOOLBAR/Rectangle 14.png"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsMouseOver, ElementName=screen}"
+                                         Value="True">
+                                <Setter Property="Source" Value="/TOOLBAR/кв актив.png"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+
+            </Image>
+            <Image x:Name="Clouse" Height="12" Width="12"  Margin="10" MouseDown="Clouse_MouseDown">
+                <Image.ToolTip>
+                    <ToolTip>
+                        Закрыть
+                    </ToolTip>
+                </Image.ToolTip>
+                <Image.Style>
+                    <Style TargetType="{x:Type Image}">
+                        <Setter Property="Source" Value="/TOOLBAR/Group 31.png"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsMouseOver, ElementName=Clouse}"
+                                         Value="True">
+                                <Setter Property="Source" Value="/TOOLBAR/крестик актив.png"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+
+            </Image>
+
+
+
+        </StackPanel>
+
+        <Border Style="{DynamicResource GridEffect}" Grid.Column="1" Grid.Row="2" Height="158" VerticalAlignment="Center" HorizontalAlignment="Center" Width="206">
             <Grid>
                 <Rectangle Height="1" VerticalAlignment="Top" Margin="0,157,1,0" Style="{DynamicResource ShadowsHorizontal}"/>
                 <Rectangle Height="152" VerticalAlignment="Top" Margin="204,5,0,0" Style="{DynamicResource ShadowsVertical}"/>
             </Grid>
         </Border>
-        <Label Content="SunClouds" Style="{DynamicResource MainTitle}" Grid.Column="1" Margin="13,0,13,106" Grid.Row="1"/>
-        <Rectangle Style="{DynamicResource RectangleWhite}" Grid.Column="1" Margin="30,52,30,104" Grid.Row="1"/>
-        <TextBox Text="{Binding TextSymb}" Grid.Column="1" Margin="30,67,28,67" Grid.Row="1" Style="{DynamicResource TextControl}">
+        <Label Content="SunClouds" Style="{DynamicResource MainTitle}" Grid.Column="1" Margin="13,0,13,106" Grid.Row="2"/>
+        <Rectangle Style="{DynamicResource RectangleWhite}" Grid.Column="1" Margin="30,52,30,104" Grid.Row="2"/>
+        <TextBox Text="{Binding TextSymb}" Grid.Column="1" Margin="30,67,28,66" Grid.Row="2" Style="{DynamicResource TextControl}">
         </TextBox>
-        <Button Content="Узнать погоду" Style="{DynamicResource CustomButton}" Grid.Column="1" Margin="30,116,28,17" Grid.Row="1" Command="{Binding SaveParameterCommand}"/>
+        <Button Content="Узнать погоду" Style="{DynamicResource CustomButton}" Grid.Column="1" Margin="30,116,28,17" Grid.Row="2" Command="{Binding SaveParameterCommand}"/>
         <Grid.RowDefinitions>
-            <RowDefinition Height="121*"/>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="87*"/>
             <RowDefinition Height="158*"/>
             <RowDefinition Height="121*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200*"/>
-            <ColumnDefinition Width="215*"/>
-            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="217*"/>
+            <ColumnDefinition Width="233*"/>
+            <ColumnDefinition Width="117*"/>
+            <ColumnDefinition Width="100*"/>
         </Grid.ColumnDefinitions>
     </Grid>
 </Window>
