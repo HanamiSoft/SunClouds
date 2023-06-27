@@ -48,7 +48,7 @@ namespace SunClouds.ViewModel
             LostFocusCommand = new BindableCommand(TextBoxLostFocus);
             PreviewMouseDownCommand = new BindableCommand(TextBoxPreviewMouseDown);
             ExitCommand = new BindableCommand(_ => onRequestClose(this, new EventArgs()));
-
+            
         }   
 
         private void TextBoxLostFocus(object parameter) // Метод для действий, связанных с LostFocus
@@ -66,11 +66,11 @@ namespace SunClouds.ViewModel
         }
         private void SaveParameter() // Метод для сохранения города в параметрах
         {
-            if (string.IsNullOrEmpty(TextSymb) && TextSymb != "Ваш город")
-                return;
+            //if (string.IsNullOrEmpty(TextSymb) && TextSymb != "Ваш город")
+            //    return;
             
-            Settings.Default.City = TextSymb;
-            Settings.Default.Save();
+            //Settings.Default.City = TextSymb;
+            //Settings.Default.Save();
             new WeatherWindow().Show(); // Открытие нового окна погоды
             ExitCommand.Execute(this); // Исполнение команды закрытия прошлого окна
         }

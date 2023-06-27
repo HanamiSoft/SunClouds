@@ -25,6 +25,13 @@ namespace SunClouds.View
         {
             InitializeComponent();
             DataContext = new WeatherViewModel();
+            Loaded += MainWindow_Loaded; // Обработчик события для страницы
+        }
+
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            Pages.Content = new SettingsPage(); // Отображение страницы для примера
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
