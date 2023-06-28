@@ -10,6 +10,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using SunClouds.View;
+using System.Windows.Navigation;
 
 namespace SunClouds.ViewModel
 {
@@ -36,6 +37,8 @@ namespace SunClouds.ViewModel
         public event EventHandler onRequestClose;
         public BindableCommand ExitCommand { get; set; }
         public BindableCommand SaveParameterCommand { get; set; } // Действие для сохранения параметра
+
+        public BindableCommand ClearText { get; set; }
         #endregion
 
         public MainViewModel()
@@ -44,8 +47,14 @@ namespace SunClouds.ViewModel
 
             SaveParameterCommand = new BindableCommand(_ => SaveParameter());
             ExitCommand = new BindableCommand(_ => onRequestClose(this, new EventArgs()));
-            
-        }   
+            ClearText = new BindableCommand(_ => ClearTextFunction());
+        }
+
+        private void ClearTextFunction()
+        {
+            TextSymb = "";
+        }
+
         private void SaveParameter() // Метод для сохранения города в параметрах
         {
             if (string.IsNullOrEmpty(TextSymb))

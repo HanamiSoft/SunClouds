@@ -17,10 +17,9 @@
             <RowDefinition Height="40"/>
             <RowDefinition Height="55"/>
         </Grid.RowDefinitions>
-        <Border Grid.ColumnSpan="2" Grid.Row="0" Background="#87B6CA" Opacity="0.7"></Border>
-        <Border Grid.ColumnSpan="2" Grid.Row="1" Background="#3D95B9" Opacity="0.7"></Border>
-        <Border Grid.ColumnSpan="2" Grid.Row="2" Background="#87B6CA" Opacity="0.7"></Border>
-        <Rectangle Height="1" Width="100" VerticalAlignment="Top" Margin="0,150,1,0" Style="{DynamicResource ShadowsHorizontal}"/>
+        <Border Grid.ColumnSpan="2" Grid.Row="0" Style="{DynamicResource BorderOneCart}"></Border>
+        <Border Grid.ColumnSpan="2" Grid.Row="1" Style="{DynamicResource BorderTwoCart}"></Border>
+        <Border Grid.ColumnSpan="2" Grid.Row="2" Style="{DynamicResource BorderThreeCart}"></Border>
        
         <Label  FontFamily="{DynamicResource Jura}"  Width="50" HorizontalAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1" Foreground="White" FontWeight="Black">
             <Label.Content>

@@ -9,9 +9,10 @@
       Title="WeatherPage">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="76*"/>
@@ -19,8 +20,60 @@
             <RowDefinition Height="44*"/>
             <RowDefinition Height="245*"/>
         </Grid.RowDefinitions>
-        <!-- <MediaElement Source="Pictures/loader.gif" Grid.ColumnSpan="3" Grid.RowSpan="4"/> -->
-        <Border Style="{DynamicResource GridEffect}" Height="75" VerticalAlignment="Center" HorizontalAlignment="Center" Width="824" Grid.ColumnSpan="3">
+
+        <ToolBar Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" BorderThickness="0" Background="Transparent" Width="824" Grid.ColumnSpan="3">
+            <Label Content="21°"  Style="{DynamicResource CityTitle}"  Width="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Separator/>
+
+            <Label  Style="{DynamicResource WeatherText20px}" Foreground="White" Width="116"  >
+                <Label.Content>
+                    <TextBlock TextWrapping="Wrap" TextAlignment="Center">Ощущение: 21</TextBlock>
+                </Label.Content>
+            </Label>
+
+            <Label  Style="{DynamicResource WeatherText20px}" Foreground="White" Width="53"  >
+                <Label.Content>
+                    <TextBlock TextWrapping="Wrap" TextAlignment="Center">Мин. 21</TextBlock>
+                </Label.Content>
+            </Label>
+
+            <Label  Style="{DynamicResource WeatherText20px}" Foreground="White" Width="64"  >
+                <Label.Content>
+                    <TextBlock TextWrapping="Wrap" TextAlignment="Center">Макс. 21</TextBlock>
+                </Label.Content>
+            </Label>
+
+            <Label  Style="{DynamicResource WeatherText20px}" Foreground="White" Width="120"  >
+                <Label.Content>
+                    <TextBlock TextWrapping="Wrap" TextAlignment="Center">Давление: 211 мм рт. ст</TextBlock>
+                </Label.Content>
+            </Label>
+
+            <Label  Style="{DynamicResource WeatherText20px}" Foreground="White" Width="118"  >
+                <Label.Content>
+                    <TextBlock TextWrapping="Wrap" TextAlignment="Center">Влажность: 20%</TextBlock>
+                </Label.Content>
+            </Label>
+
+            <Label  Style="{DynamicResource WeatherText20px}" Foreground="White" Width="110"  >
+                <Label.Content>
+                    <TextBlock TextWrapping="Wrap" TextAlignment="Center">Ветер м/с: 7 м/с: 21</TextBlock>
+                </Label.Content>
+            </Label>
+
+            <Label  Style="{DynamicResource WeatherText20px}" Foreground="White" Width="110"  >
+                <Label.Content>
+                    <TextBlock TextWrapping="Wrap" TextAlignment="Center">Ветер°: 221</TextBlock>
+                </Label.Content>
+            </Label>
+
+
+
+
+
+        </ToolBar>
+
+        <Border Style="{DynamicResource GridEffect}" Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Width="824" Grid.ColumnSpan="3">
             <Grid>
                 <StackPanel Orientation="Horizontal" Height="75" Grid.ColumnSpan="3" VerticalAlignment="Center">
                     <Label Content="{Binding CurrentTemperature}"  Style="{DynamicResource TemperatureStyle}"/>
@@ -33,7 +86,7 @@
             </Grid>
         </Border>
 
-        <Border Style="{DynamicResource GridEffect}" Grid.Row="2" Grid.RowSpan="2" Height="275" VerticalAlignment="Top" HorizontalAlignment="Center" Width="824" Grid.ColumnSpan="3">
+        <Border Style="{DynamicResource GridEffect}" Grid.Row="2" Grid.RowSpan="2" Height="275" VerticalAlignment="Top" HorizontalAlignment="Center" Width="AUTO" Grid.ColumnSpan="3">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="70"/>

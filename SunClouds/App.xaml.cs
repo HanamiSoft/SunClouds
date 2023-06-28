@@ -179,6 +179,75 @@ namespace SunClouds
                 Current.Resources.MergedDictionaries.Insert(0, dict);
             }
         }
+        
+        private static string cartOneStyle;
+        public static string CartOneStyle
+        {
+            get { return cartOneStyle; }
+            set
+            {
+                cartOneStyle = value;
+                var dict = new ResourceDictionary { Source = new Uri($"/StylesLib;component/Resources/{value}.xaml#BorderOneCart", UriKind.Relative) };
+
+                if (Current.Resources.MergedDictionaries.Count > 0)
+                {
+                    Current.Resources.MergedDictionaries.RemoveAt(0);
+                }
+
+                Current.Resources.MergedDictionaries.Insert(0, dict);
+            }
+        }
+        private static string cartTwoStyle;
+        public static string CartTwoStyle
+        {
+            get { return cartTwoStyle; }
+            set
+            {
+                cartTwoStyle = value;
+                var dict = new ResourceDictionary { Source = new Uri($"/StylesLib;component/Resources/{value}.xaml#BorderTwoCart", UriKind.Relative) };
+
+                if (Current.Resources.MergedDictionaries.Count > 0)
+                {
+                    Current.Resources.MergedDictionaries.RemoveAt(0);
+                }
+
+                Current.Resources.MergedDictionaries.Insert(0, dict);
+            }
+        }
+        private static string cartThreeStyle;
+        public static string CartThreeStyle
+        {
+            get { return cartThreeStyle; }
+            set
+            {
+                cartThreeStyle = value;
+                var dict = new ResourceDictionary { Source = new Uri($"/StylesLib;component/Resources/{value}.xaml#BorderThreeCart", UriKind.Relative) };
+
+                if (Current.Resources.MergedDictionaries.Count > 0)
+                {
+                    Current.Resources.MergedDictionaries.RemoveAt(0);
+                }
+
+                Current.Resources.MergedDictionaries.Insert(0, dict);
+            }
+        }
+        private static string watermarkStyle;
+        public static string WatermarkStyle
+        {
+            get { return watermarkStyle; }
+            set
+            {
+                watermarkStyle = value;
+                var dict = new ResourceDictionary { Source = new Uri($"/StylesLib;component/Resources/{value}.xaml#WatermarkStyle", UriKind.Relative) };
+
+                if (Current.Resources.MergedDictionaries.Count > 0)
+                {
+                    Current.Resources.MergedDictionaries.RemoveAt(0);
+                }
+
+                Current.Resources.MergedDictionaries.Insert(0, dict);
+            }
+        }
     }
 }
 
