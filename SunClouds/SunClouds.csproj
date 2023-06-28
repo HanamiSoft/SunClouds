@@ -83,14 +83,17 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ViewModel\FavouriteCitiesModel.cs" />
+    <Compile Include="ViewModel\FeelingUCViewModel.cs" />
     <Compile Include="ViewModel\GFeelingsViewModel.cs" />
     <Compile Include="ViewModel\GPressureViewModel.cs" />
     <Compile Include="ViewModel\GTemperatureViewModel.cs" />
     <Compile Include="ViewModel\SettingsViewModel.cs" />
-    <Compile Include="ViewModel\WeatherDayViewModel.cs" />
     <Compile Include="ViewModel\WeatherHourViewModel.cs" />
     <Compile Include="ViewModel\WeatherPageViewModel.cs" />
     <Compile Include="ViewModel\WeatherViewModel.cs" />
+    <Compile Include="View\FeelingUC.xaml.cs">
+      <DependentUpon>FeelingUC.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\GraphicFeelingsPage.xaml.cs">
       <DependentUpon>GraphicFeelingsPage.xaml</DependentUpon>
     </Compile>
@@ -106,9 +109,6 @@
     <Compile Include="View\UserFavouriteCities.xaml.cs">
       <DependentUpon>UserFavouriteCities.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\UserWeatherDay.xaml.cs">
-      <DependentUpon>UserWeatherDay.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\UserWeatherHour.xaml.cs">
       <DependentUpon>UserWeatherHour.xaml</DependentUpon>
     </Compile>
@@ -118,6 +118,10 @@
     <Compile Include="View\WeatherWindow.xaml.cs">
       <DependentUpon>WeatherWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="View\FeelingUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\GraphicFeelingsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -154,10 +158,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\UserFavouriteCities.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\UserWeatherDay.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -220,6 +220,11 @@
     <Resource Include="Pictures\Sunny.png" />
     <Resource Include="Pictures\Thunderstorm.png" />
     <Resource Include="Pictures\Wind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pictures\loader.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="TOOLBAR\Rectangle 14.png" />

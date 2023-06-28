@@ -62,6 +62,7 @@ namespace SunClouds.ViewModel
 
             Settings.Default.City = TextSymb;
             Settings.Default.Save();
+            
             new WeatherWindow().Show(); // Открытие нового окна погоды
             ExitCommand.Execute(this); // Исполнение команды закрытия прошлого окна
         }

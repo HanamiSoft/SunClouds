@@ -4,42 +4,42 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:SunClouds.View"
-             mc:Ignorable="d" 
+             mc:Ignorable="d"
              d:DesignHeight="150" d:DesignWidth="100">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="50"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition Height="55"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="55"/>
         </Grid.RowDefinitions>
         <Border Grid.ColumnSpan="2" Grid.Row="0" Style="{DynamicResource BorderOneCart}"></Border>
         <Border Grid.ColumnSpan="2" Grid.Row="1" Style="{DynamicResource BorderTwoCart}"></Border>
         <Border Grid.ColumnSpan="2" Grid.Row="2" Style="{DynamicResource BorderThreeCart}"></Border>
        
-        <Label  FontFamily="{DynamicResource Jura}"  Width="40" HorizontalAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1" Foreground="White">
+        <Label  FontFamily="{DynamicResource Jura}"  Width="50" HorizontalAlignment="Center" Grid.ColumnSpan="2" Grid.Row="1" Foreground="White" FontWeight="Black">
             <Label.Content>
-                <TextBlock TextWrapping="Wrap" TextAlignment="Center" Text="16:00 21°"></TextBlock>
+                <TextBlock TextWrapping="Wrap" TextAlignment="Center" Text="{Binding Date}"/>
             </Label.Content>
         </Label>
 
         <Label  FontFamily="{DynamicResource Jura}" Foreground="White" Width="42" Grid.Row="2" >
             <Label.Content>
-                <TextBlock TextWrapping="Wrap" TextAlignment="Center" Text="Влаж. 21°"></TextBlock>
+                <TextBlock TextWrapping="Wrap" TextAlignment="Center" Text="{Binding Humidity}"/>
             </Label.Content>
         </Label>
 
         <Label  FontFamily="{DynamicResource Jura}" Width="44" Foreground="White" Grid.Row="2" Grid.Column="1" >
             <Label.Content>
-                <TextBlock TextWrapping="Wrap" TextAlignment="Center" Text="Ощущ. 21°"></TextBlock>
+                <TextBlock TextWrapping="Wrap" TextAlignment="Center" Text="{Binding Feels}"/>
             </Label.Content>
         </Label>
 
-        <Image Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Pictures/Sunny.png"/>
+        <Image Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Source="{Binding Img}"/>
 
     </Grid>
 </UserControl>

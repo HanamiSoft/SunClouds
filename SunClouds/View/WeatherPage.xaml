@@ -7,7 +7,6 @@
       mc:Ignorable="d" 
       d:DesignHeight="550" d:DesignWidth="900"
       Title="WeatherPage">
-
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition />
@@ -76,33 +75,51 @@
 
         <Border Style="{DynamicResource GridEffect}" Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" Width="824" Grid.ColumnSpan="3">
             <Grid>
-                <Rectangle Height="1" VerticalAlignment="Top" Margin="0,58,1,0" Style="{DynamicResource ShadowsHorizontal}"/>
-                <Rectangle Height="74" VerticalAlignment="Top" Margin="822,5,0,0" Style="{DynamicResource ShadowsVertical}"/>
+                <StackPanel Orientation="Horizontal" Height="75" Grid.ColumnSpan="3" VerticalAlignment="Center">
+                    <Label Content="{Binding CurrentTemperature}"  Style="{DynamicResource TemperatureStyle}"/>
+                    <Rectangle Fill="#ffff" Width="1" Height="60"/>
+                    <ToolBar Height="90" VerticalAlignment="Center" ItemsSource="{Binding ToolbarContent}" HorizontalAlignment="Center" BorderThickness="1" Background="Transparent" Width="824" Grid.ColumnSpan="3"/>
+                </StackPanel>
+                <Rectangle Height="1" VerticalAlignment="Top" Margin="0,79,1,0" Style="{DynamicResource ShadowsHorizontal}"/>
+                <Rectangle Height="76" VerticalAlignment="Top" Margin="822,0,0,0" Style="{DynamicResource ShadowsVertical}"/>
 
             </Grid>
         </Border>
 
         <Border Style="{DynamicResource GridEffect}" Grid.Row="2" Grid.RowSpan="2" Height="275" VerticalAlignment="Top" HorizontalAlignment="Center" Width="AUTO" Grid.ColumnSpan="3">
             <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="70"/>
+                    <RowDefinition />
+                </Grid.RowDefinitions>
                 <Rectangle Height="1" VerticalAlignment="Top" Margin="0,273,1,0" Style="{DynamicResource ShadowsHorizontal}"/>
                 <Rectangle Height="273" VerticalAlignment="Top" Margin="822,5,0,0" Style="{DynamicResource ShadowsVertical}"/>
-                <Button FontFamily="{DynamicResource Jura}" Foreground="White" BorderThickness="0" Content="Температура" Grid.Column="0" Grid.Row="2" Margin="10,7,0,0" Background="#87B6CA" HorizontalAlignment="Left" Width="247" Height="30" VerticalAlignment="Top"/>
-                <Button FontFamily="{DynamicResource Jura}" Foreground="White" BorderThickness="0" Content="Ощущается как" Grid.Column="1" Grid.Row="2" Margin="0,7,0,0" Background="#87B6CA" Height="30" VerticalAlignment="Top" HorizontalAlignment="Center" Width="280"/>
-                <Button FontFamily="{DynamicResource Jura}" Foreground="White"  BorderThickness="0" Content="Давление" Grid.Column="2"  Margin="0,7,10,0" Grid.Row="2" Background="#87B6CA" HorizontalAlignment="Right" Width="240" Height="30" VerticalAlignment="Top"/>
+                <WrapPanel Grid.ColumnSpan="3">
+                    <Button FontFamily="{DynamicResource Jura}" Foreground="White" Margin="35, 5, 0, 0" MaxWidth="230" HorizontalAlignment="Center" BorderThickness="0" Content="Температура" Style="{DynamicResource CustomButtonInWeather}" Command="{Binding ToGTemp}"/>
+                    <Button FontFamily="{DynamicResource Jura}" Foreground="White" Margin="30, 5, 0, 0" MaxWidth="230" HorizontalAlignment="Center" BorderThickness="0" Content="Ощущается как" Style="{DynamicResource CustomButtonInWeather}" Command="{Binding ToGFeels}"/>
+                    <Button FontFamily="{DynamicResource Jura}" Foreground="White"  Margin="30, 5, 0, 0" MaxWidth="230" HorizontalAlignment="Center" BorderThickness="0" Content="Давление" Style="{DynamicResource CustomButtonInWeather}" Command="{Binding ToGPressure}"/>
+                </WrapPanel>
             </Grid>
         </Border>
-
         <Border Style="{DynamicResource GridEffect}" Grid.Row="1" Height="154" VerticalAlignment="Center" HorizontalAlignment="Center" Width="824" Grid.ColumnSpan="3">
             <Grid>
+                <ItemsControl ItemsSource="{Binding HoursList}" Grid.Row="3" Grid.ColumnSpan="2" Width="724" Margin="38,0,38,0" Height="140" >
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    <ItemsControl.ItemContainerStyle>
+                            <Style>
+                                <Setter Property="FrameworkElement.Margin" Value="8,7,8,0" />
+                            </Style>
+                        </ItemsControl.ItemContainerStyle>
+                    </ItemsControl>
                 <Rectangle Height="1" VerticalAlignment="Top" Margin="0,152,1,0" Style="{DynamicResource ShadowsHorizontal}"/>
                 <Rectangle Height="154" VerticalAlignment="Top" Margin="824,5,0,0" Style="{DynamicResource ShadowsVertical}"/>
 
-                <StackPanel Width="824" HorizontalAlignment="Center" Height="154" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Visible"  >
-                    
-
-                    <!-- Добавляем экземпляр UserControl в StackPanel -->
-                </StackPanel>
             </Grid>
         </Border>
+        <Frame Grid.ColumnSpan="3" Grid.Row="3" Content="{Binding GraphPage}"/>
     </Grid>
 </Page>

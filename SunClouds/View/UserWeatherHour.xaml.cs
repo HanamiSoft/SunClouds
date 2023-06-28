@@ -21,10 +21,11 @@ namespace SunClouds.View
     /// </summary>
     public partial class UserWeatherHour : UserControl
     {
-        public UserWeatherHour()
+        
+        public UserWeatherHour(string date, string humidity, string feels, string imgPath)
         {
             InitializeComponent();
-            DataContext = new WeatherHourViewModel();
+            DataContext = new WeatherHourViewModel(date,humidity,feels, imgPath);
         }
     }
 }

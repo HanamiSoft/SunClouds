@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SunClouds.Properties;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -21,21 +22,21 @@ namespace SunClouds.ViewModel.Helpers
         /// Вторым параметрам передаётся тип градусов температуры: <br/> standard = kelvin <br/> metric = celsius <br/> imperial = fahrenheit
         /// </summary>
         /// <returns>Json из API</returns>
-        public static string GetNow(string city, string units = "standart")
+        public static string GetNow()
         {
-            string data = $"weather?q={city}&units={units}&appid={apiKey}";
+            string units = Settings.Default.Celsius ? "metric" : "imperial";
+            string data = $"weather?q={Settings.Default.City}&units={units}&appid={apiKey}";
             return new HttpClient().GetAsync(url + data).Result.Content.ReadAsStringAsync().Result;
         }
         /// <summary>
         /// Запрос на получение погоды города на каждые 3 часа вперёд из API
         /// Вторым параметрам передаётся тип градусов температуры: <br/> standard = kelvin <br/> metric = celsius <br/> imperial = fahrenheit
         /// </summary>
-        /// <param name="city"></param>
-        /// <param name="units"></param>
         /// <returns></returns>
-        public static string GetThreeHours(string city, string units = "standart")
+        public static string GetThreeHours()
         {
-            string data = $"forecast?q={city}&units={units}&appid={apiKey}";
+            string units = Settings.Default.Celsius ? "metric" : "imperial";
+            string data = $"forecast?q={Settings.Default.City}&units={units}&appid={apiKey}";
             return new HttpClient().GetAsync(url + data).Result.Content.ReadAsStringAsync().Result;
         }
 

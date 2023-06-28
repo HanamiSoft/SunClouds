@@ -17,14 +17,14 @@ using System.Windows.Shapes;
 namespace SunClouds.View
 {
     /// <summary>
-    /// Логика взаимодействия для UserWeatherDailyCard.xaml
+    /// Логика взаимодействия для FeelingUC.xaml
     /// </summary>
-    public partial class UserWeatherDailyCard : UserControl
+    public partial class FeelingUC : UserControl
     {
-        public UserWeatherDailyCard()
+        public FeelingUC(string textContent, string dataContent)
         {
             InitializeComponent();
-            DataContext = new WeatherDayViewModel();
+            DataContext = new FeelingUCViewModel(textContent, dataContent);
         }
     }
 }

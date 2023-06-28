@@ -1,4 +1,5 @@
-﻿using SunClouds.ViewModel.Helpers;
+﻿using SunClouds.Properties;
+using SunClouds.ViewModel.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -45,9 +46,39 @@ namespace SunClouds.ViewModel
         public BindableCommand SetFavouriteCountry { get; set; }
         public BindableCommand ClearText2 { get; set; }
         #endregion
+        #region Свойства
+        private bool isCelsiusChecked = Settings.Default.Celsius;
+
+        public bool IsCelsiusChecked
+        {
+            get { return isCelsiusChecked; }
+            set 
+            {
+                isCelsiusChecked = value;
+                isFahrenheitChecked = !isCelsiusChecked;
+                OnPropertyChanged();
+            }
+        }
+        private bool isFahrenheitChecked = Settings.Default.Fahrenheit;
+
+        public bool IsFahrenheitChecked
+        {
+            get { return isFahrenheitChecked; }
+            set 
+            {
+                isFahrenheitChecked = value;
+                isCelsiusChecked = !isFahrenheitChecked;
+                OnPropertyChanged();
+            }
+        }
 
         public ObservableCollection<FavouriteCitiesModel> Items { get;} = new ObservableCollection<FavouriteCitiesModel>();
-
+        #endregion
+        #region commands
+        public BindableCommand CSelected { get; set; }
+        public BindableCommand FSelected { get; set; }
+        public BindableCommand SaveParameterCommand { get; set; } // Действие для сохранения параметра
+        #endregion
         public SettingsViewModel()
         {
             // Добавьте элементы в коллекцию
@@ -68,6 +99,16 @@ namespace SunClouds.ViewModel
         private void SetFavouriteCountryFunction() 
         {
             Items.Add(new FavouriteCitiesModel { Country = TextSymb1, Shirota = TextSymb2 });
+            SaveParameterCommand = new BindableCommand(_ =>
+            {
+                Settings.Default.Fahrenheit = isFahrenheitChecked;
+                Settings.Default.Celsius = isCelsiusChecked;
+                Settings.Default.Save();
+            });
+            
+            CSelected = new BindableCommand(_ => IsCelsiusChecked = true);
+            FSelected = new BindableCommand(_ => IsFahrenheitChecked = true);
+            
         }
     }
 }

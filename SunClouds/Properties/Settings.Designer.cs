@@ -34,5 +34,29 @@ namespace SunClouds.Properties {
                 this["City"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Fahrenheit {
+            get {
+                return ((bool)(this["Fahrenheit"]));
+            }
+            set {
+                this["Fahrenheit"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool Celsius {
+            get {
+                return ((bool)(this["Celsius"]));
+            }
+            set {
+                this["Celsius"] = value;
+            }
+        }
     }
 }

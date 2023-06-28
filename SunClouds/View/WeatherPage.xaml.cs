@@ -21,10 +21,10 @@ namespace SunClouds.View
     /// </summary>
     public partial class WeatherPage : Page
     {
-        public WeatherPage()
+        public WeatherPage(CurrentWeather current, ThreeHoursWeather weathercast)
         {
             InitializeComponent();
-            DataContext = new WeatherPageViewModel();
+            DataContext = new WeatherPageViewModel(current, weathercast);
         }
     }
 }
