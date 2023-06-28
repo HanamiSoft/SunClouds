@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/.vs/SunClouds/v17/.suo
+/StylesLib/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+/StylesLib/obj/Debug/GeneratedInternalTypeHelper.g.i.cs
