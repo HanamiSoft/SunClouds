@@ -16,24 +16,6 @@ C:\Users\mirzo\Source\Repos\StylesLib\obj\Debug\StylesLib.csproj.CoreCompileInpu
 C:\Users\mirzo\Source\Repos\StylesLib\obj\Debug\StylesLib.dll
 C:\Users\mirzo\Source\Repos\StylesLib\obj\Debug\StylesLib.pdb
 C:\Users\mirzo\Source\Repos\StylesLib\bin\Debug\StylesLib.dll.config
-C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\StylesLib.dll.config
-C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\StylesLib.dll
-C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\StylesLib.pdb
-C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.csproj.AssemblyReference.cache
-C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\FullDictionary.baml
-C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\Resources\DayTheme.baml
-C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\Resources\MorningEveningTheme.baml
-C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\Resources\NightTheme.baml
-C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib_MarkupCompile.cache
-C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib_MarkupCompile.lref
-C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\Themes\Generic.baml
-C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.g.resources
-C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.Properties.Resources.resources
-C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.csproj.GenerateResource.cache
-C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.csproj.CoreCompileInputs.cache
-C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.dll
-C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.pdb
 C:\Users\PC\Source\Repos\SunClouds\StylesLib\bin\Debug\StylesLib.dll.config
 C:\Users\PC\Source\Repos\SunClouds\StylesLib\bin\Debug\StylesLib.dll
 C:\Users\PC\Source\Repos\SunClouds\StylesLib\bin\Debug\StylesLib.pdb
@@ -107,3 +89,40 @@ C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\ru\Xceed.Wpf.AvalonDoc
 C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
 C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.csproj.CopyComplete
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\StylesLib.dll.config
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\StylesLib.dll
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\StylesLib.pdb
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\nl-BE\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.csproj.AssemblyReference.cache
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\FullDictionary.baml
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\Resources\DayTheme.baml
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\Resources\MorningEveningTheme.baml
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\Resources\NightTheme.baml
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib_MarkupCompile.cache
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib_MarkupCompile.lref
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\Themes\Generic.baml
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.g.resources
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.Properties.Resources.resources
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.csproj.GenerateResource.cache
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.csproj.CoreCompileInputs.cache
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.csproj.CopyComplete
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.dll
+C:\Users\oxotn\OneDrive\Рабочий стол\SunCloudsSoftware\StylesLib\obj\Debug\StylesLib.pdb

@@ -6,6 +6,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
+      xmlns:local="clr-namespace:SunClouds.View"
         Background="{DynamicResource BackgroundTheme}"
         MouseDown="Window_MouseDown"
         WindowStyle="None"
@@ -19,6 +20,16 @@
         <main1:MainViewModel/>
     </Window.DataContext>
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="34*"/>
+            <RowDefinition Height="Auto" MinHeight="169"/>
+            <RowDefinition Height="34*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="Auto" MinWidth="206.5"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <StackPanel Orientation="Horizontal" Grid.Column="3" Height="34" VerticalAlignment="Center" HorizontalAlignment="Center" Width="99" >
             <Image x:Name="Minus" Height="12" Width="12"  Margin="10" MouseDown="Minus_MouseDown">
                 <Image.ToolTip>
@@ -77,22 +88,9 @@
                         </Style.Triggers>
                     </Style>
                 </Image.Style>
-
             </Image>
-
-
-
         </StackPanel>
-<Grid.RowDefinitions>
-            <RowDefinition Height="34*"/>
-            <RowDefinition Height="Auto" MinHeight="169"/>
-            <RowDefinition Height="34*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="Auto" MinWidth="206.5"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
+       
 
         <Border Style="{DynamicResource GridEffect}" Grid.Row="1" Grid.Column="1">
             <Grid>

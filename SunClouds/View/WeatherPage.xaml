@@ -98,11 +98,7 @@
                 <Rectangle Height="154" VerticalAlignment="Top" Margin="824,5,0,0" Style="{DynamicResource ShadowsVertical}"/>
 
                 <StackPanel Width="824" HorizontalAlignment="Center" Height="154" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Visible"  >
-                    <local:UserWeatherHour Width="100" Height="121" HorizontalAlignment="Center" Margin="0,14,0,0">
-                        <local:UserWeatherHour.Effect>
-                            <DropShadowEffect Color="Black" Direction="280" ShadowDepth="9" Opacity="0.2" />
-                        </local:UserWeatherHour.Effect>
-                    </local:UserWeatherHour>
+                    
 
                     <!-- Добавляем экземпляр UserControl в StackPanel -->
                 </StackPanel>
