@@ -30,7 +30,7 @@
             <ColumnDefinition Width="Auto" MinWidth="206.5"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <StackPanel Orientation="Horizontal" Grid.Column="3" Height="34" VerticalAlignment="Center" HorizontalAlignment="Center" Width="99" >
+        <StackPanel Orientation="Horizontal" Grid.Column="3" Height="34" VerticalAlignment="Top" HorizontalAlignment="Right" Width="99" >
             <Image x:Name="Minus" Height="12" Width="12"  Margin="10" MouseDown="Minus_MouseDown">
                 <Image.ToolTip>
                     <ToolTip>
