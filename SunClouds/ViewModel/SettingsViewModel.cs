@@ -57,14 +57,7 @@ namespace SunClouds.ViewModel
             
             CSelected = new BindableCommand(_ => IsCelsiusChecked = true);
             FSelected = new BindableCommand(_ => IsFahrenheitChecked = true);
-            // Добавьте элементы в коллекцию
-            Items.Add(new FavouriteCitiesModel {  });
-            Items.Add(new FavouriteCitiesModel { Country = "Item 2", Shirota = "Shirota 2" });
-            Items.Add(new FavouriteCitiesModel { Country = "Item 3", Shirota = "Shirota 3" });
-            Items.Add(new FavouriteCitiesModel { Country = "Item 3", Shirota = "Shirota 3" });
-            Items.Add(new FavouriteCitiesModel { Country = "Item 3", Shirota = "Shirota 3" });
-            /*Settings.Default.City = ;
-            Settings.Default.Save();*/
+            
         }
     }
 }

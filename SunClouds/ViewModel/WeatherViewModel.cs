@@ -8,8 +8,8 @@ namespace SunClouds.ViewModel
 {
     internal class WeatherViewModel : BindingHelper
     {
-        private static CurrentWeather current = JsonConvert.DeserializeObject<CurrentWeather>(APIHelper.GetNow());
-        private static ThreeHoursWeather weathercast = JsonConvert.DeserializeObject<ThreeHoursWeather>(APIHelper.GetThreeHours());
+        private static CurrentWeather current;
+        private static ThreeHoursWeather weathercast;
 
         #region Свойства
         private object mainPageContent = new WeatherPage(current, weathercast);
@@ -107,12 +107,25 @@ namespace SunClouds.ViewModel
         #endregion
         public WeatherViewModel()
         {
+            try
+            {
+                current = JsonConvert.DeserializeObject<CurrentWeather>(APIHelper.GetNow());
+                weathercast = JsonConvert.DeserializeObject<ThreeHoursWeather>(APIHelper.GetThreeHours());
+            }
+            catch (Exception)
+            {
+            
+            }
             ToSettingsСommand = new BindableCommand(_ => MainPageContent = new SettingsPage());
             ToWeatherCommand = new BindableCommand(_ => MainPageContent = new WeatherPage(current, weathercast));
             LoadData();
+            mainPageContent = new WeatherPage(current, weathercast);
         }
+
+        
         private void LoadData()
         {
+            if (weathercast == null || current == null) return;
             Time1 = weathercast.list[0].dt_txt.ToString().Substring(11, 5);
             Time2 = weathercast.list[1].dt_txt.ToString().Substring(11, 5);
             Time3 = weathercast.list[2].dt_txt.ToString().Substring(11, 5);

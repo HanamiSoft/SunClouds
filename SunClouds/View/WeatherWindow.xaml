@@ -42,7 +42,7 @@
             <Label  Style="{DynamicResource WeatherText20px}" Grid.Row="3" Content="{Binding Time2}" Margin="10,9,13,10"></Label>
             <Label  Style="{DynamicResource WeatherText20px}" Grid.Row="4" Content="{Binding Time3}" Margin="10,0,0,0"></Label>
 
-            <Label  Style="{DynamicResource WeatherText24px}" Grid.Row="1" VerticalAlignment="Center"  HorizontalContentAlignment="Right" Margin="130,20,0,0" >
+            <Label  Style="{DynamicResource WeatherText26px}" Grid.Row="1" VerticalAlignment="Center"  HorizontalContentAlignment="Right" Margin="130,20,0,0" >
                 <Label.Content>
                     <TextBlock TextWrapping="Wrap" Text="{Binding CurrentTip}" HorizontalAlignment="Right"/>
                 </Label.Content>

@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace SunClouds.ViewModel
 {
@@ -55,6 +56,7 @@ namespace SunClouds.ViewModel
         }
         private void LoadData(CurrentWeather current, ThreeHoursWeather weathercast)
         {
+            if(current == null || weathercast == null) return;
             CurrentTemperature = current.main.temp.ToString().Substring(0, 2) + "°";
             ToolbarContent.Add(new FeelingUC("Ощущение:", current.main.feels_like.ToString().Substring(0, 2) + "°"));
             ToolbarContent.Add(new FeelingUC("Мин.", current.main.temp_min.ToString().Substring(0, 2) + "°"));
