@@ -19,7 +19,71 @@
         <main1:MainViewModel/>
     </Window.DataContext>
     <Grid>
-        <Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Column="3" Height="34" VerticalAlignment="Center" HorizontalAlignment="Center" Width="99" >
+            <Image x:Name="Minus" Height="12" Width="12"  Margin="10" MouseDown="Minus_MouseDown">
+                <Image.ToolTip>
+                    <ToolTip>
+                        свернуть
+                    </ToolTip>
+                </Image.ToolTip>
+                <Image.Style>
+                    <Style TargetType="{x:Type Image}">
+                        <Setter Property="Source" Value="/TOOLBAR/Vector 46.png"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsMouseOver, ElementName=Minus}"
+                                         Value="True">
+                                <Setter Property="Source" Value="/TOOLBAR/мин актив.png"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+
+
+
+            </Image>
+            <Image x:Name="screen" Height="12" Width="12"  Margin="10" MouseDown="screen_MouseDown">
+                <Image.ToolTip>
+                    <ToolTip>
+                        свернуть в окно
+                    </ToolTip>
+                </Image.ToolTip>
+                <Image.Style>
+                    <Style TargetType="{x:Type Image}">
+                        <Setter Property="Source" Value="/TOOLBAR/Rectangle 14.png"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsMouseOver, ElementName=screen}"
+                                         Value="True">
+                                <Setter Property="Source" Value="/TOOLBAR/кв актив.png"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+
+            </Image>
+            <Image x:Name="Clouse" Height="12" Width="12"  Margin="10" MouseDown="Clouse_MouseDown">
+                <Image.ToolTip>
+                    <ToolTip>
+                        Закрыть
+                    </ToolTip>
+                </Image.ToolTip>
+                <Image.Style>
+                    <Style TargetType="{x:Type Image}">
+                        <Setter Property="Source" Value="/TOOLBAR/Group 31.png"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsMouseOver, ElementName=Clouse}"
+                                         Value="True">
+                                <Setter Property="Source" Value="/TOOLBAR/крестик актив.png"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+
+            </Image>
+
+
+
+        </StackPanel>
+<Grid.RowDefinitions>
             <RowDefinition Height="34*"/>
             <RowDefinition Height="Auto" MinHeight="169"/>
             <RowDefinition Height="34*"/>
@@ -32,7 +96,7 @@
 
         <Border Style="{DynamicResource GridEffect}" Grid.Row="1" Grid.Column="1">
             <Grid>
-                <Rectangle Height="1" VerticalAlignment="Top" Style="{DynamicResource ShadowsHorizontal}" Margin="-1,168,0,0"/>
+                <Rectangle Height="1" VerticalAlignment="Top" Style="{DynamicResource ShadowsHorizontal}" Margin="0,154,0,0"/>
                 <Rectangle Width="1" HorizontalAlignment="Right" Style="{DynamicResource ShadowsVertical}"/>
             </Grid>
         </Border>

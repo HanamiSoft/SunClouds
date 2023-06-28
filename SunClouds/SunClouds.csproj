@@ -207,7 +207,9 @@
       <Name>StylesLib</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="TOOLBAR\Group 31.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Pictures\Blizzard.png" />
     <Resource Include="Pictures\Cloudy.png" />
@@ -218,6 +220,21 @@
     <Resource Include="Pictures\Sunny.png" />
     <Resource Include="Pictures\Thunderstorm.png" />
     <Resource Include="Pictures\Wind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TOOLBAR\Rectangle 14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TOOLBAR\Vector 46.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TOOLBAR\кв актив.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TOOLBAR\крестик актив.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TOOLBAR\мин актив.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

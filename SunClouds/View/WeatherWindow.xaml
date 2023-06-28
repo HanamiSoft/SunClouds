@@ -13,16 +13,19 @@
         Title="WeatherInfWindow"  Height="625" Width="1240" Top="-27" Left="-3"
         Background="{DynamicResource BackgroundTheme}">
     <Grid>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="340"/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="161*"/>
+            <ColumnDefinition Width="19*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="39"></RowDefinition>
+            <RowDefinition Height="21"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Border  Grid.Column="0" Style="{DynamicResource GridEffect}" Grid.RowSpan="2" Width="NaN" Height="NaN"/>
-        <Grid Grid.Column="0" Grid.RowSpan="2" Margin="0,0,10,0">
+        <Border  Grid.Column="0" Style="{DynamicResource GridEffect}" Grid.RowSpan="3" Width="NaN" Height="NaN"/>
+        <Grid Grid.Column="0" Grid.RowSpan="3" Margin="0,0,10,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
@@ -73,7 +76,71 @@
 
 
         </Grid>
-        <Grid Grid.Row="0" Grid.Column="1" Margin="5,15,5,0" Height="45" VerticalAlignment="Top">
+        <StackPanel Orientation="Horizontal" Grid.Column="2" Height="36" VerticalAlignment="Center" HorizontalAlignment="Center" Width="95" >
+            <Image x:Name="Minus" Height="12" Width="12"  Margin="10" MouseDown="Minus_MouseDown">
+                <Image.ToolTip>
+                    <ToolTip>
+                        свернуть
+                    </ToolTip>
+                </Image.ToolTip>
+                <Image.Style>
+                    <Style TargetType="{x:Type Image}">
+                        <Setter Property="Source" Value="/TOOLBAR/Vector 46.png"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsMouseOver, ElementName=Minus}"
+                                         Value="True">
+                                <Setter Property="Source" Value="/TOOLBAR/мин актив.png"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+
+
+
+            </Image>
+            <Image x:Name="screen" Height="12" Width="12"  Margin="10" MouseDown="screen_MouseDown">
+                <Image.ToolTip>
+                    <ToolTip>
+                        свернуть в окно
+                    </ToolTip>
+                </Image.ToolTip>
+                <Image.Style>
+                    <Style TargetType="{x:Type Image}">
+                        <Setter Property="Source" Value="/TOOLBAR/Rectangle 14.png"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsMouseOver, ElementName=screen}"
+                                         Value="True">
+                                <Setter Property="Source" Value="/TOOLBAR/кв актив.png"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+
+            </Image>
+            <Image x:Name="Clouse" Height="12" Width="12"  Margin="10" MouseDown="Clouse_MouseDown">
+                <Image.ToolTip>
+                    <ToolTip>
+                        Закрыть
+                    </ToolTip>
+                </Image.ToolTip>
+                <Image.Style>
+                    <Style TargetType="{x:Type Image}">
+                        <Setter Property="Source" Value="/TOOLBAR/Group 31.png"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding IsMouseOver, ElementName=Clouse}"
+                                         Value="True">
+                                <Setter Property="Source" Value="/TOOLBAR/крестик актив.png"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Style>
+
+            </Image>
+
+
+
+        </StackPanel>
+        <Grid Grid.Row="2" Grid.Column="1" Margin="5,0,5,0" Height="45" VerticalAlignment="Top" Grid.ColumnSpan="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -81,7 +148,7 @@
             <Button Style="{DynamicResource ButtonWithLineLeft}" Grid.Column="0" Command="{Binding ToWeatherCommand}"  Content="Погода" Margin="10,-7,0,0" Width="420" HorizontalAlignment="Left"/>
             <Button Style="{DynamicResource ButtonWithLineRight}" Grid.Column="1" Command="{Binding ToSettingsСommand}" Content="Настройки" Margin="0,-7,10,0" Width="420" HorizontalAlignment="Right" />
         </Grid>
-        <Frame Grid.Row="1" Grid.Column="1" Content="{Binding MainPageContent}" NavigationUIVisibility="Hidden"/>
+        <Frame Grid.Row="2" Content="{Binding MainPageContent}" NavigationUIVisibility="Hidden" Grid.ColumnSpan="3" Margin="335,77,-5,0"/>
     </Grid>
 </Window>
     

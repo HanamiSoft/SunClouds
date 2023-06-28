@@ -10,9 +10,10 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="76*"/>
@@ -21,7 +22,7 @@
             <RowDefinition Height="245*"/>
         </Grid.RowDefinitions>
 
-        <ToolBar Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" BorderThickness="1" Background="Transparent" Width="824" Grid.ColumnSpan="3">
+        <ToolBar Height="60" VerticalAlignment="Center" HorizontalAlignment="Center" BorderThickness="0" Background="Transparent" Width="824" Grid.ColumnSpan="3">
             <Label Content="21°"  Style="{DynamicResource CityTitle}"  Width="100" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
             <Separator/>
 
@@ -81,11 +82,13 @@
             </Grid>
         </Border>
 
-        <Border Style="{DynamicResource GridEffect}" Grid.Row="2" Grid.RowSpan="2" Height="275" VerticalAlignment="Top" HorizontalAlignment="Center" Width="824" Grid.ColumnSpan="3">
+        <Border Style="{DynamicResource GridEffect}" Grid.Row="2" Grid.RowSpan="2" Height="275" VerticalAlignment="Top" HorizontalAlignment="Center" Width="AUTO" Grid.ColumnSpan="3">
             <Grid>
                 <Rectangle Height="1" VerticalAlignment="Top" Margin="0,273,1,0" Style="{DynamicResource ShadowsHorizontal}"/>
                 <Rectangle Height="273" VerticalAlignment="Top" Margin="822,5,0,0" Style="{DynamicResource ShadowsVertical}"/>
-
+                <Button FontFamily="{DynamicResource Jura}" Foreground="White" BorderThickness="0" Content="Температура" Grid.Column="0" Grid.Row="2" Margin="10,7,0,0" Background="#87B6CA" HorizontalAlignment="Left" Width="247" Height="30" VerticalAlignment="Top"/>
+                <Button FontFamily="{DynamicResource Jura}" Foreground="White" BorderThickness="0" Content="Ощущается как" Grid.Column="1" Grid.Row="2" Margin="0,7,0,0" Background="#87B6CA" Height="30" VerticalAlignment="Top" HorizontalAlignment="Center" Width="280"/>
+                <Button FontFamily="{DynamicResource Jura}" Foreground="White"  BorderThickness="0" Content="Давление" Grid.Column="2"  Margin="0,7,10,0" Grid.Row="2" Background="#87B6CA" HorizontalAlignment="Right" Width="240" Height="30" VerticalAlignment="Top"/>
             </Grid>
         </Border>
 
@@ -94,21 +97,16 @@
                 <Rectangle Height="1" VerticalAlignment="Top" Margin="0,152,1,0" Style="{DynamicResource ShadowsHorizontal}"/>
                 <Rectangle Height="154" VerticalAlignment="Top" Margin="824,5,0,0" Style="{DynamicResource ShadowsVertical}"/>
 
+                <StackPanel Width="824" HorizontalAlignment="Center" Height="154" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Visible"  >
+                    <local:UserWeatherHour Width="100" Height="121" HorizontalAlignment="Center" Margin="0,14,0,0">
+                        <local:UserWeatherHour.Effect>
+                            <DropShadowEffect Color="Black" Direction="280" ShadowDepth="9" Opacity="0.2" />
+                        </local:UserWeatherHour.Effect>
+                    </local:UserWeatherHour>
+
+                    <!-- Добавляем экземпляр UserControl в StackPanel -->
+                </StackPanel>
             </Grid>
         </Border>
-        <Button FontFamily="{DynamicResource Jura}" Foreground="White" BorderThickness="0" Content="Температура" Grid.Column="0" Grid.Row="2" Margin="50,7,10,7" Background="#87B6CA"/>
-        <Button FontFamily="{DynamicResource Jura}" Foreground="White" BorderThickness="0" Content="Ощущается как" Grid.Column="1" Grid.Row="2" Margin="10,5,10,9" Background="#87B6CA"/>
-        <Button FontFamily="{DynamicResource Jura}" Foreground="White"  BorderThickness="0" Content="Давление" Grid.Column="2"  Margin="10,5,50,9" Grid.Row="2" Background="#87B6CA"/>
-
-        <StackPanel Grid.Row="1" Width="824" HorizontalAlignment="Center" ScrollViewer.CanContentScroll="True" ScrollViewer.HorizontalScrollBarVisibility="Visible" Margin="0,23,0,15" Grid.Column="1"  >
-            <local:UserWeatherHour Width="100" Height="140" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <local:UserWeatherHour.Effect>
-                    <DropShadowEffect Color="Black" Direction="280" ShadowDepth="9" Opacity="0.2" />
-                </local:UserWeatherHour.Effect>
-            </local:UserWeatherHour>
-            
-            <!-- Добавляем экземпляр UserControl в StackPanel -->
-        </StackPanel>
-
     </Grid>
 </Page>
