@@ -364,3 +364,4 @@ FodyWeavers.xsd
 /.vs/SunClouds/v17/.suo
 /StylesLib/obj/Debug/GeneratedInternalTypeHelper.g.i.cs
 /StylesLib/obj/Debug/StylesLib_MarkupCompile.i.cache
+/.gitignore

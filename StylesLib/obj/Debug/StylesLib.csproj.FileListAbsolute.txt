@@ -70,39 +70,40 @@ D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая ра
 D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunCloudss\StylesLib\obj\Debug\StylesLib.csproj.CoreCompileInputs.cache
 D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunCloudss\StylesLib\obj\Debug\StylesLib.dll
 D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunCloudss\StylesLib\obj\Debug\StylesLib.pdb
-C:\Users\79663\Source\Repos\SunClouds\StylesLib\bin\Debug\StylesLib.dll.config
-C:\Users\79663\Source\Repos\SunClouds\StylesLib\bin\Debug\StylesLib.dll
-C:\Users\79663\Source\Repos\SunClouds\StylesLib\bin\Debug\StylesLib.pdb
-C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.csproj.AssemblyReference.cache
-C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\FullDictionary.baml
-C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\Resources\DayTheme.baml
-C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\Resources\MorningEveningTheme.baml
-C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\Resources\NightTheme.baml
-C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib_MarkupCompile.cache
-C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib_MarkupCompile.lref
-C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\Themes\Generic.baml
-C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.g.resources
-C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.Properties.Resources.resources
-C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.csproj.GenerateResource.cache
-C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.csproj.CoreCompileInputs.cache
-C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.dll
-C:\Users\79663\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.pdb
-D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\bin\Debug\StylesLib.dll.config
-D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\bin\Debug\StylesLib.dll
-D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\bin\Debug\StylesLib.pdb
-D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\StylesLib.csproj.AssemblyReference.cache
-D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\FullDictionary.baml
-D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\Resources\DayTheme.baml
-D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\Resources\MorningEveningTheme.baml
-D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\Resources\NightTheme.baml
-D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
-D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\StylesLib_MarkupCompile.cache
-D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\StylesLib_MarkupCompile.lref
-D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\Themes\Generic.baml
-D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\StylesLib.g.resources
-D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\StylesLib.Properties.Resources.resources
-D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\StylesLib.csproj.GenerateResource.cache
-D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\StylesLib.csproj.CoreCompileInputs.cache
-D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\StylesLib.dll
-D:\П50-4-21(2 курс)\ОАиП Скорогудаева\Итоговая работа\SunClouds\StylesLib\obj\Debug\StylesLib.pdb
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\StylesLib.dll.config
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\StylesLib.dll
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\StylesLib.pdb
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.csproj.AssemblyReference.cache
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\obj\Debug\FullDictionary.baml
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\obj\Debug\Resources\DayTheme.baml
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\obj\Debug\Resources\MorningEveningTheme.baml
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\obj\Debug\Resources\NightTheme.baml
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib_MarkupCompile.cache
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib_MarkupCompile.lref
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\obj\Debug\Themes\Generic.baml
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.g.resources
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.Properties.Resources.resources
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.csproj.GenerateResource.cache
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.csproj.CoreCompileInputs.cache
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.dll
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.pdb
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\nl-BE\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\mirzo\Source\Repos\SunClouds\StylesLib\obj\Debug\StylesLib.csproj.CopyComplete
